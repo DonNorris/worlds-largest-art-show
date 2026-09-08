@@ -6,12 +6,21 @@ type Show = {
   id: string;
   showName: string;
   artistName: string;
+  email?: string;
   county: string;
   state: string;
   town: string;
+  mainMedium?: string;
+  startDate?: string;
+  endDate?: string;
+  showHours?: string;
+  description?: string;
+  website?: string;
+  instagram?: string;
+  photoUrl?: string;
   plan: string;
+  upgradePackage: string;
 };
-
 export default function Home() {
   const [shows, setShows] = useState<Show[]>([]);
   const [loading, setLoading] = useState(true);
@@ -27,9 +36,8 @@ export default function Home() {
     <main style={{ background: "#fbf7ef", color: "#111827" }}>
       <section
         style={{
-          minHeight: "92vh",
-          background:
-            "radial-gradient(circle at top left, rgba(245,208,111,.35), transparent 30%), linear-gradient(135deg,#111827,#1f1713,#050505)",
+          minHeight: "70vh",
+          background: "url('/art-background.png') center / cover no-repeat",
           color: "white",
           display: "flex",
           alignItems: "center",
@@ -38,13 +46,13 @@ export default function Home() {
         }}
       >
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-          <p style={{ color: "#f5d06f", fontWeight: 800, letterSpacing: 2 }}>
+          <p style={{ color: "#f5d06f", fontWeight: 800, letterSpacing: 2, fontSize: "28px" }}>
             NOVEMBER 28 – DECEMBER 8, 2026
           </p>
 
           <h1
             style={{
-              fontSize: "clamp(3rem, 8vw, 7.5rem)",
+              fontSize: "clamp(2.85rem, 7.6vw, 7.125rem)",
               lineHeight: .95,
               margin: "20px 0",
             }}
@@ -56,14 +64,21 @@ export default function Home() {
             One Global Art Show.
           </h1>
 
-          <p style={{ fontSize: 24, lineHeight: 1.5, maxWidth: 850, margin: "0 auto" }}>
+          <p style={{ fontSize: 40, lineHeight: 1.5, maxWidth: 1100, margin: "0 auto" }}>
             A free worldwide art event open to every artist everywhere.
           </p>
+                    <p style={{ fontSize: 40, lineHeight: 1.5, maxWidth: 850, margin: "0 auto" }}>
+           Register your art show. Be found by visitors. Become part of art history.
+          </p>
+
 
           <div style={{ marginTop: 38, display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="/submit" style={buttonGold}>Submit Your Show</a>
-            <a href="#directory" style={buttonOutline}>Browse Shows</a>
+            <a href="/submit" style={buttonGold}>Register Your Art Show</a>
+            <a href="#directory" style={buttonOutline}>See Registered Shows</a>
           </div>
+          <p style={{ marginTop: 28, color: "white", fontWeight: 700, fontSize: "40px" }}>
+  Scroll down to learn how to register, how it works, and why artists are joining ↓
+</p>
         </div>
       </section>
 
@@ -76,7 +91,204 @@ export default function Home() {
           Artists around the world will hold their own art shows, exhibits, studio tours, demonstrations, online events, gallery openings, and creative experiences in their own communities and countries — all during the same nine-day worldwide celebration of art.
         </p>
       </section>
+<section style={section}>
+  <h2 style={headline}>How It Works</h2>
 
+  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
+    <div style={{ marginBottom: 30 }}>
+      <h3>Step 1 — Register Your Art Show</h3>
+      <p style={paragraph}>
+        Registration is free. Tell the world about your art show,
+        exhibit, studio tour, gallery event, demonstration, workshop,
+        online event, or creative experience.
+      </p>
+    </div>
+
+    <div style={{ marginBottom: 30 }}>
+      <h3>Step 2 — Plan Your Event</h3>
+      <p style={paragraph}>
+        You decide when, where, and how you participate. One hour,
+        one day, or all nine days. Any location. Any size event.
+      </p>
+    </div>
+
+    <div style={{ marginBottom: 30 }}>
+      <h3>Step 3 — Promote Your Event</h3>
+      <p style={paragraph}>
+        Use your website, social media, email list, friends,
+        customers, galleries, schools, clubs, and local media
+        to invite visitors.
+      </p>
+    </div>
+
+    <div>
+      <h3>Step 4 — Become Part of Art History</h3>
+      <p style={paragraph}>
+        Together, artists around the world become part of a single
+        worldwide celebration of creativity, imagination, and artistic
+        expression.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style={section}>
+  <h2 style={headline}>Why Register Your Art Show?</h2>
+
+  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
+    <div style={{ marginBottom: 30 }}>
+      <h3>Free Worldwide Participation</h3>
+      <p style={paragraph}>
+        Registration is free. Every artist can participate, regardless of
+        experience, location, or financial resources.
+      </p>
+    </div>
+
+    <div style={{ marginBottom: 30 }}>
+      <h3>Be Found by Visitors</h3>
+      <p style={paragraph}>
+        Your show becomes part of a searchable worldwide directory where
+        visitors can discover art shows by city, state, country, and art type.
+      </p>
+    </div>
+
+    <div style={{ marginBottom: 30 }}>
+      <h3>Promote Your Art Your Way</h3>
+      <p style={paragraph}>
+        Your show can be held in a studio, gallery, home, school, storefront,
+        community center, online event, outdoor space, or anywhere you choose.
+      </p>
+    </div>
+
+    <div style={{ marginBottom: 30 }}>
+      <h3>Receive Free Artist Success Tips</h3>
+      <p style={paragraph}>
+        Participating artists will receive free ideas and guidance for planning,
+        promoting, displaying, and improving their shows.
+      </p>
+    </div>
+
+    <div>
+      <h3>Become Part of Art History</h3>
+      <p style={paragraph}>
+        By registering, you join artists around the world in creating one
+        global celebration of creativity.
+      </p>
+    </div>
+  </div>
+
+  <div style={{ marginTop: 30 }}>
+    <a href="/submit" style={buttonGold}>Register Your Art Show</a>
+  </div>
+</section>
+<section style={section}>
+  <h2 style={headline}>Artist Success Center</h2>
+
+  <p style={paragraph}>
+    One of the goals of the World’s Largest Art Show is not only to help
+    artists participate, but to help them have successful events.
+  </p>
+
+  <p style={paragraph}>
+    Participating artists will receive free ideas, articles, and resources
+    based on more than 50 years of experience teaching art, organizing
+    events, promoting creativity, and helping artists reach their goals.
+  </p>
+
+  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
+    <h3>Topics Include:</h3>
+
+    <ul style={{ fontSize: 20, lineHeight: 2 }}>
+      <li>Planning a successful art show</li>
+      <li>Attracting more visitors</li>
+      <li>Promoting your event on social media</li>
+      <li>Display and presentation ideas</li>
+      <li>Working with local media</li>
+      <li>Using AI tools to help artists</li>
+      <li>Creating a better visitor experience</li>
+      <li>Increasing art sales and commissions</li>
+    </ul>
+  </div>
+
+  <p style={paragraph}>
+    New resources and tips will be added regularly as we build a worldwide
+    community of artists helping artists succeed.
+  </p>
+</section>
+<section style={section}>
+  <h2 style={headline}>Join Our Email List</h2>
+
+  <p style={paragraph}>
+    Whether you are an artist, collector, gallery owner, teacher, student,
+    or art enthusiast, we invite you to join our growing worldwide community.
+  </p>
+
+  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
+    <h3>Artists Will Receive:</h3>
+
+    <ul style={{ fontSize: 20, lineHeight: 2 }}>
+      <li>World's Largest Art Show updates</li>
+      <li>Free Artist Success Tips</li>
+      <li>Promotion and marketing ideas</li>
+      <li>New resources and articles</li>
+      <li>Participation announcements and reminders</li>
+    </ul>
+
+    <h3 style={{ marginTop: 40 }}>Visitors Will Receive:</h3>
+
+    <ul style={{ fontSize: 20, lineHeight: 2 }}>
+      <li>Featured artists and art shows</li>
+      <li>Upcoming events and announcements</li>
+      <li>Special art-related content</li>
+      <li>Updates from around the world</li>
+    </ul>
+  </div>
+
+  <p style={paragraph}>
+    Our goal is to build the largest worldwide community of artists,
+    art supporters, and creative organizations ever assembled.
+  </p>
+
+  <div style={{ marginTop: 30 }}>
+    <a href="/submit" style={buttonGold}>
+      Join Our Community
+    </a>
+  </div>
+</section>
+<section style={section}>
+  <h2 style={headline}>Can Groups Participate?</h2>
+
+  <p style={paragraph}>
+    Absolutely.
+  </p>
+
+  <p style={paragraph}>
+    Art clubs, schools, galleries, guilds, associations, museums,
+    community organizations, and creative groups are welcome to
+    participate in the World's Largest Art Show.
+  </p>
+
+  <p style={paragraph}>
+    A group may register its event, exhibition, festival, open studio,
+    or art show as a single listing.
+  </p>
+
+  <p style={paragraph}>
+    Individual artists participating within that group event may also
+    register their own shows, displays, demonstrations, or activities.
+  </p>
+
+  <p style={paragraph}>
+    This helps promote both the group event and the individual artists,
+    while making it easier for visitors to discover creative events and
+    artists around the world.
+  </p>
+
+  <p style={paragraph}>
+    The goal is simple: help more artists be found, seen, appreciated,
+    and supported.
+  </p>
+</section>
       <section style={darkStatement}>
         <h2 style={statementText}>
           The World Has Never Had One Art Show for Everyone — Until Now.
@@ -134,12 +346,82 @@ export default function Home() {
 
         <div style={grid}>
           {shows.map((show) => (
-            <article key={show.id} style={card}>
-              <h3>{show.showName}</h3>
-              <p><strong>Artist:</strong> {show.artistName}</p>
-              <p><strong>Location:</strong> {show.town}, {show.state}, {show.county}</p>
-              <p><strong>Plan:</strong> {show.plan}</p>
-            </article>
+           <article
+  key={show.id}
+  style={{ ...card, cursor: "pointer" }}
+  onClick={() => window.location.href = `/shows/${show.id}`}
+>
+            {show.photoUrl && (
+              <img
+              src={show.photoUrl}
+              alt={`${show.showName} artwork`}
+              style={{ width: "100%", height: "180px", objectFit: "cover", borderRadius: "10px" }}
+              />
+  )}
+  <h3
+  style={{
+    marginTop: 0,
+    marginBottom: "8px",
+    fontSize: "24px",
+    fontWeight: 700,
+    color: "#2563eb",
+  }}
+>
+  <a
+    href={`/shows/${show.id}`}
+    style={{ color: "inherit", textDecoration: "none" }}
+  >
+    {show.showName}
+  </a>
+</h3>
+
+  {show.mainMedium && (
+    <p><strong>Art Type:</strong> {show.mainMedium}</p>
+  )}
+
+  <p><strong>Artist:</strong> {show.artistName}</p>
+
+  <p>
+    <strong>Location:</strong> {show.town}, {show.state}, {show.county}
+  </p>
+
+  {(show.startDate || show.endDate) && (
+    <p>
+      <strong>Date:</strong> {show.startDate || "TBA"}
+      {show.endDate ? ` through ${show.endDate}` : ""}
+    </p>
+  )}
+
+  {show.showHours && (
+    <p><strong>Hours:</strong> {show.showHours}</p>
+  )}
+
+  {show.description && (
+    <p style={{ color: "#4b5563", lineHeight: 1.6 }}>
+      {show.description.length > 160
+        ? `${show.description.slice(0, 160)}...`
+        : show.description}
+    </p>
+  )}
+
+  {show.website && (
+    <p>
+      <a href={show.website.startsWith("http") ? show.website : `https://${show.website}`} target="_blank" rel="noopener noreferrer">
+        Visit Website
+      </a>
+    </p>
+  )}
+
+  {show.instagram && (
+    <p>
+      <a href={show.instagram} target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
+    </p>
+  )}
+
+<p>Click anywhere to see more about this show →</p>
+</article>
           ))}
         </div>
       </section>

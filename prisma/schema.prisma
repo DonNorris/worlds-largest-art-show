@@ -36,14 +36,43 @@ model User {
 }
 
 model Show {
-  id         String     @id @default(cuid())
-  showName   String
-  artistName String
-  county     String
-  state      String
-  town       String
-  plan       Plan
-  status     ShowStatus @default(DRAFT)
-  userId     String?
-  createdAt  DateTime   @default(now())
+  id          String     @id @default(cuid())
+  showName    String
+  artistName  String
+  email       String?
+  county      String
+  state       String
+  town        String
+  mainMedium  String?
+  startDate   String?
+  endDate     String?
+  showHours   String?
+  description String?
+  website     String?
+  instagram   String?
+  facebook      String?
+  tiktok        String?
+  xTwitter      String?
+  onlineStore   String?
+  videoLink     String?
+  galleryStudioLink String?
+  contactEmail      String?
+  mailingListLink   String?
+  photoUrl          String?
+  photoUrl2 String?
+photoUrl3 String?
+photoUrl4 String?
+photoUrl5 String?
+artistPhotoUrl String?
+bio           String?
+classes       String?
+services      String?
+commissions   String?
+upcomingShows String?
+  plan        Plan
+  upgradePackage String @default("FREE")
+  paymentStatus String @default("FREE")
+  status      ShowStatus @default(DRAFT)
+  userId      String?
+  createdAt   DateTime   @default(now())
 }
