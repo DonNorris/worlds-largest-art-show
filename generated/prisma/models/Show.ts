@@ -28,10 +28,39 @@ export type ShowMinAggregateOutputType = {
   id: string | null
   showName: string | null
   artistName: string | null
+  email: string | null
   county: string | null
   state: string | null
   town: string | null
+  mainMedium: string | null
+  startDate: string | null
+  endDate: string | null
+  showHours: string | null
+  description: string | null
+  website: string | null
+  instagram: string | null
+  facebook: string | null
+  tiktok: string | null
+  xTwitter: string | null
+  onlineStore: string | null
+  videoLink: string | null
+  galleryStudioLink: string | null
+  contactEmail: string | null
+  mailingListLink: string | null
+  photoUrl: string | null
+  photoUrl2: string | null
+  photoUrl3: string | null
+  photoUrl4: string | null
+  photoUrl5: string | null
+  artistPhotoUrl: string | null
+  bio: string | null
+  classes: string | null
+  services: string | null
+  commissions: string | null
+  upcomingShows: string | null
   plan: $Enums.Plan | null
+  upgradePackage: string | null
+  paymentStatus: string | null
   status: $Enums.ShowStatus | null
   userId: string | null
   createdAt: Date | null
@@ -41,10 +70,39 @@ export type ShowMaxAggregateOutputType = {
   id: string | null
   showName: string | null
   artistName: string | null
+  email: string | null
   county: string | null
   state: string | null
   town: string | null
+  mainMedium: string | null
+  startDate: string | null
+  endDate: string | null
+  showHours: string | null
+  description: string | null
+  website: string | null
+  instagram: string | null
+  facebook: string | null
+  tiktok: string | null
+  xTwitter: string | null
+  onlineStore: string | null
+  videoLink: string | null
+  galleryStudioLink: string | null
+  contactEmail: string | null
+  mailingListLink: string | null
+  photoUrl: string | null
+  photoUrl2: string | null
+  photoUrl3: string | null
+  photoUrl4: string | null
+  photoUrl5: string | null
+  artistPhotoUrl: string | null
+  bio: string | null
+  classes: string | null
+  services: string | null
+  commissions: string | null
+  upcomingShows: string | null
   plan: $Enums.Plan | null
+  upgradePackage: string | null
+  paymentStatus: string | null
   status: $Enums.ShowStatus | null
   userId: string | null
   createdAt: Date | null
@@ -54,10 +112,39 @@ export type ShowCountAggregateOutputType = {
   id: number
   showName: number
   artistName: number
+  email: number
   county: number
   state: number
   town: number
+  mainMedium: number
+  startDate: number
+  endDate: number
+  showHours: number
+  description: number
+  website: number
+  instagram: number
+  facebook: number
+  tiktok: number
+  xTwitter: number
+  onlineStore: number
+  videoLink: number
+  galleryStudioLink: number
+  contactEmail: number
+  mailingListLink: number
+  photoUrl: number
+  photoUrl2: number
+  photoUrl3: number
+  photoUrl4: number
+  photoUrl5: number
+  artistPhotoUrl: number
+  bio: number
+  classes: number
+  services: number
+  commissions: number
+  upcomingShows: number
   plan: number
+  upgradePackage: number
+  paymentStatus: number
   status: number
   userId: number
   createdAt: number
@@ -69,10 +156,39 @@ export type ShowMinAggregateInputType = {
   id?: true
   showName?: true
   artistName?: true
+  email?: true
   county?: true
   state?: true
   town?: true
+  mainMedium?: true
+  startDate?: true
+  endDate?: true
+  showHours?: true
+  description?: true
+  website?: true
+  instagram?: true
+  facebook?: true
+  tiktok?: true
+  xTwitter?: true
+  onlineStore?: true
+  videoLink?: true
+  galleryStudioLink?: true
+  contactEmail?: true
+  mailingListLink?: true
+  photoUrl?: true
+  photoUrl2?: true
+  photoUrl3?: true
+  photoUrl4?: true
+  photoUrl5?: true
+  artistPhotoUrl?: true
+  bio?: true
+  classes?: true
+  services?: true
+  commissions?: true
+  upcomingShows?: true
   plan?: true
+  upgradePackage?: true
+  paymentStatus?: true
   status?: true
   userId?: true
   createdAt?: true
@@ -82,10 +198,39 @@ export type ShowMaxAggregateInputType = {
   id?: true
   showName?: true
   artistName?: true
+  email?: true
   county?: true
   state?: true
   town?: true
+  mainMedium?: true
+  startDate?: true
+  endDate?: true
+  showHours?: true
+  description?: true
+  website?: true
+  instagram?: true
+  facebook?: true
+  tiktok?: true
+  xTwitter?: true
+  onlineStore?: true
+  videoLink?: true
+  galleryStudioLink?: true
+  contactEmail?: true
+  mailingListLink?: true
+  photoUrl?: true
+  photoUrl2?: true
+  photoUrl3?: true
+  photoUrl4?: true
+  photoUrl5?: true
+  artistPhotoUrl?: true
+  bio?: true
+  classes?: true
+  services?: true
+  commissions?: true
+  upcomingShows?: true
   plan?: true
+  upgradePackage?: true
+  paymentStatus?: true
   status?: true
   userId?: true
   createdAt?: true
@@ -95,10 +240,39 @@ export type ShowCountAggregateInputType = {
   id?: true
   showName?: true
   artistName?: true
+  email?: true
   county?: true
   state?: true
   town?: true
+  mainMedium?: true
+  startDate?: true
+  endDate?: true
+  showHours?: true
+  description?: true
+  website?: true
+  instagram?: true
+  facebook?: true
+  tiktok?: true
+  xTwitter?: true
+  onlineStore?: true
+  videoLink?: true
+  galleryStudioLink?: true
+  contactEmail?: true
+  mailingListLink?: true
+  photoUrl?: true
+  photoUrl2?: true
+  photoUrl3?: true
+  photoUrl4?: true
+  photoUrl5?: true
+  artistPhotoUrl?: true
+  bio?: true
+  classes?: true
+  services?: true
+  commissions?: true
+  upcomingShows?: true
   plan?: true
+  upgradePackage?: true
+  paymentStatus?: true
   status?: true
   userId?: true
   createdAt?: true
@@ -181,10 +355,39 @@ export type ShowGroupByOutputType = {
   id: string
   showName: string
   artistName: string
+  email: string | null
   county: string
   state: string
   town: string
+  mainMedium: string | null
+  startDate: string | null
+  endDate: string | null
+  showHours: string | null
+  description: string | null
+  website: string | null
+  instagram: string | null
+  facebook: string | null
+  tiktok: string | null
+  xTwitter: string | null
+  onlineStore: string | null
+  videoLink: string | null
+  galleryStudioLink: string | null
+  contactEmail: string | null
+  mailingListLink: string | null
+  photoUrl: string | null
+  photoUrl2: string | null
+  photoUrl3: string | null
+  photoUrl4: string | null
+  photoUrl5: string | null
+  artistPhotoUrl: string | null
+  bio: string | null
+  classes: string | null
+  services: string | null
+  commissions: string | null
+  upcomingShows: string | null
   plan: $Enums.Plan
+  upgradePackage: string
+  paymentStatus: string
   status: $Enums.ShowStatus
   userId: string | null
   createdAt: Date
@@ -215,10 +418,39 @@ export type ShowWhereInput = {
   id?: Prisma.StringFilter<"Show"> | string
   showName?: Prisma.StringFilter<"Show"> | string
   artistName?: Prisma.StringFilter<"Show"> | string
+  email?: Prisma.StringNullableFilter<"Show"> | string | null
   county?: Prisma.StringFilter<"Show"> | string
   state?: Prisma.StringFilter<"Show"> | string
   town?: Prisma.StringFilter<"Show"> | string
+  mainMedium?: Prisma.StringNullableFilter<"Show"> | string | null
+  startDate?: Prisma.StringNullableFilter<"Show"> | string | null
+  endDate?: Prisma.StringNullableFilter<"Show"> | string | null
+  showHours?: Prisma.StringNullableFilter<"Show"> | string | null
+  description?: Prisma.StringNullableFilter<"Show"> | string | null
+  website?: Prisma.StringNullableFilter<"Show"> | string | null
+  instagram?: Prisma.StringNullableFilter<"Show"> | string | null
+  facebook?: Prisma.StringNullableFilter<"Show"> | string | null
+  tiktok?: Prisma.StringNullableFilter<"Show"> | string | null
+  xTwitter?: Prisma.StringNullableFilter<"Show"> | string | null
+  onlineStore?: Prisma.StringNullableFilter<"Show"> | string | null
+  videoLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  galleryStudioLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  contactEmail?: Prisma.StringNullableFilter<"Show"> | string | null
+  mailingListLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl2?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl3?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl4?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl5?: Prisma.StringNullableFilter<"Show"> | string | null
+  artistPhotoUrl?: Prisma.StringNullableFilter<"Show"> | string | null
+  bio?: Prisma.StringNullableFilter<"Show"> | string | null
+  classes?: Prisma.StringNullableFilter<"Show"> | string | null
+  services?: Prisma.StringNullableFilter<"Show"> | string | null
+  commissions?: Prisma.StringNullableFilter<"Show"> | string | null
+  upcomingShows?: Prisma.StringNullableFilter<"Show"> | string | null
   plan?: Prisma.EnumPlanFilter<"Show"> | $Enums.Plan
+  upgradePackage?: Prisma.StringFilter<"Show"> | string
+  paymentStatus?: Prisma.StringFilter<"Show"> | string
   status?: Prisma.EnumShowStatusFilter<"Show"> | $Enums.ShowStatus
   userId?: Prisma.StringNullableFilter<"Show"> | string | null
   createdAt?: Prisma.DateTimeFilter<"Show"> | Date | string
@@ -228,10 +460,39 @@ export type ShowOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
+  email?: Prisma.SortOrderInput | Prisma.SortOrder
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  mainMedium?: Prisma.SortOrderInput | Prisma.SortOrder
+  startDate?: Prisma.SortOrderInput | Prisma.SortOrder
+  endDate?: Prisma.SortOrderInput | Prisma.SortOrder
+  showHours?: Prisma.SortOrderInput | Prisma.SortOrder
+  description?: Prisma.SortOrderInput | Prisma.SortOrder
+  website?: Prisma.SortOrderInput | Prisma.SortOrder
+  instagram?: Prisma.SortOrderInput | Prisma.SortOrder
+  facebook?: Prisma.SortOrderInput | Prisma.SortOrder
+  tiktok?: Prisma.SortOrderInput | Prisma.SortOrder
+  xTwitter?: Prisma.SortOrderInput | Prisma.SortOrder
+  onlineStore?: Prisma.SortOrderInput | Prisma.SortOrder
+  videoLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  galleryStudioLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  contactEmail?: Prisma.SortOrderInput | Prisma.SortOrder
+  mailingListLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl2?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl3?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl4?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl5?: Prisma.SortOrderInput | Prisma.SortOrder
+  artistPhotoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  bio?: Prisma.SortOrderInput | Prisma.SortOrder
+  classes?: Prisma.SortOrderInput | Prisma.SortOrder
+  services?: Prisma.SortOrderInput | Prisma.SortOrder
+  commissions?: Prisma.SortOrderInput | Prisma.SortOrder
+  upcomingShows?: Prisma.SortOrderInput | Prisma.SortOrder
   plan?: Prisma.SortOrder
+  upgradePackage?: Prisma.SortOrder
+  paymentStatus?: Prisma.SortOrder
   status?: Prisma.SortOrder
   userId?: Prisma.SortOrderInput | Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -244,10 +505,39 @@ export type ShowWhereUniqueInput = Prisma.AtLeast<{
   NOT?: Prisma.ShowWhereInput | Prisma.ShowWhereInput[]
   showName?: Prisma.StringFilter<"Show"> | string
   artistName?: Prisma.StringFilter<"Show"> | string
+  email?: Prisma.StringNullableFilter<"Show"> | string | null
   county?: Prisma.StringFilter<"Show"> | string
   state?: Prisma.StringFilter<"Show"> | string
   town?: Prisma.StringFilter<"Show"> | string
+  mainMedium?: Prisma.StringNullableFilter<"Show"> | string | null
+  startDate?: Prisma.StringNullableFilter<"Show"> | string | null
+  endDate?: Prisma.StringNullableFilter<"Show"> | string | null
+  showHours?: Prisma.StringNullableFilter<"Show"> | string | null
+  description?: Prisma.StringNullableFilter<"Show"> | string | null
+  website?: Prisma.StringNullableFilter<"Show"> | string | null
+  instagram?: Prisma.StringNullableFilter<"Show"> | string | null
+  facebook?: Prisma.StringNullableFilter<"Show"> | string | null
+  tiktok?: Prisma.StringNullableFilter<"Show"> | string | null
+  xTwitter?: Prisma.StringNullableFilter<"Show"> | string | null
+  onlineStore?: Prisma.StringNullableFilter<"Show"> | string | null
+  videoLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  galleryStudioLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  contactEmail?: Prisma.StringNullableFilter<"Show"> | string | null
+  mailingListLink?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl2?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl3?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl4?: Prisma.StringNullableFilter<"Show"> | string | null
+  photoUrl5?: Prisma.StringNullableFilter<"Show"> | string | null
+  artistPhotoUrl?: Prisma.StringNullableFilter<"Show"> | string | null
+  bio?: Prisma.StringNullableFilter<"Show"> | string | null
+  classes?: Prisma.StringNullableFilter<"Show"> | string | null
+  services?: Prisma.StringNullableFilter<"Show"> | string | null
+  commissions?: Prisma.StringNullableFilter<"Show"> | string | null
+  upcomingShows?: Prisma.StringNullableFilter<"Show"> | string | null
   plan?: Prisma.EnumPlanFilter<"Show"> | $Enums.Plan
+  upgradePackage?: Prisma.StringFilter<"Show"> | string
+  paymentStatus?: Prisma.StringFilter<"Show"> | string
   status?: Prisma.EnumShowStatusFilter<"Show"> | $Enums.ShowStatus
   userId?: Prisma.StringNullableFilter<"Show"> | string | null
   createdAt?: Prisma.DateTimeFilter<"Show"> | Date | string
@@ -257,10 +547,39 @@ export type ShowOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
+  email?: Prisma.SortOrderInput | Prisma.SortOrder
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  mainMedium?: Prisma.SortOrderInput | Prisma.SortOrder
+  startDate?: Prisma.SortOrderInput | Prisma.SortOrder
+  endDate?: Prisma.SortOrderInput | Prisma.SortOrder
+  showHours?: Prisma.SortOrderInput | Prisma.SortOrder
+  description?: Prisma.SortOrderInput | Prisma.SortOrder
+  website?: Prisma.SortOrderInput | Prisma.SortOrder
+  instagram?: Prisma.SortOrderInput | Prisma.SortOrder
+  facebook?: Prisma.SortOrderInput | Prisma.SortOrder
+  tiktok?: Prisma.SortOrderInput | Prisma.SortOrder
+  xTwitter?: Prisma.SortOrderInput | Prisma.SortOrder
+  onlineStore?: Prisma.SortOrderInput | Prisma.SortOrder
+  videoLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  galleryStudioLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  contactEmail?: Prisma.SortOrderInput | Prisma.SortOrder
+  mailingListLink?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl2?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl3?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl4?: Prisma.SortOrderInput | Prisma.SortOrder
+  photoUrl5?: Prisma.SortOrderInput | Prisma.SortOrder
+  artistPhotoUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  bio?: Prisma.SortOrderInput | Prisma.SortOrder
+  classes?: Prisma.SortOrderInput | Prisma.SortOrder
+  services?: Prisma.SortOrderInput | Prisma.SortOrder
+  commissions?: Prisma.SortOrderInput | Prisma.SortOrder
+  upcomingShows?: Prisma.SortOrderInput | Prisma.SortOrder
   plan?: Prisma.SortOrder
+  upgradePackage?: Prisma.SortOrder
+  paymentStatus?: Prisma.SortOrder
   status?: Prisma.SortOrder
   userId?: Prisma.SortOrderInput | Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -276,10 +595,39 @@ export type ShowScalarWhereWithAggregatesInput = {
   id?: Prisma.StringWithAggregatesFilter<"Show"> | string
   showName?: Prisma.StringWithAggregatesFilter<"Show"> | string
   artistName?: Prisma.StringWithAggregatesFilter<"Show"> | string
+  email?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   county?: Prisma.StringWithAggregatesFilter<"Show"> | string
   state?: Prisma.StringWithAggregatesFilter<"Show"> | string
   town?: Prisma.StringWithAggregatesFilter<"Show"> | string
+  mainMedium?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  startDate?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  endDate?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  showHours?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  description?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  website?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  instagram?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  facebook?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  tiktok?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  xTwitter?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  onlineStore?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  videoLink?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  galleryStudioLink?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  contactEmail?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  mailingListLink?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  photoUrl?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  photoUrl2?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  photoUrl3?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  photoUrl4?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  photoUrl5?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  artistPhotoUrl?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  bio?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  classes?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  services?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  commissions?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
+  upcomingShows?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   plan?: Prisma.EnumPlanWithAggregatesFilter<"Show"> | $Enums.Plan
+  upgradePackage?: Prisma.StringWithAggregatesFilter<"Show"> | string
+  paymentStatus?: Prisma.StringWithAggregatesFilter<"Show"> | string
   status?: Prisma.EnumShowStatusWithAggregatesFilter<"Show"> | $Enums.ShowStatus
   userId?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Show"> | Date | string
@@ -289,10 +637,39 @@ export type ShowCreateInput = {
   id?: string
   showName: string
   artistName: string
+  email?: string | null
   county: string
   state: string
   town: string
+  mainMedium?: string | null
+  startDate?: string | null
+  endDate?: string | null
+  showHours?: string | null
+  description?: string | null
+  website?: string | null
+  instagram?: string | null
+  facebook?: string | null
+  tiktok?: string | null
+  xTwitter?: string | null
+  onlineStore?: string | null
+  videoLink?: string | null
+  galleryStudioLink?: string | null
+  contactEmail?: string | null
+  mailingListLink?: string | null
+  photoUrl?: string | null
+  photoUrl2?: string | null
+  photoUrl3?: string | null
+  photoUrl4?: string | null
+  photoUrl5?: string | null
+  artistPhotoUrl?: string | null
+  bio?: string | null
+  classes?: string | null
+  services?: string | null
+  commissions?: string | null
+  upcomingShows?: string | null
   plan: $Enums.Plan
+  upgradePackage?: string
+  paymentStatus?: string
   status?: $Enums.ShowStatus
   userId?: string | null
   createdAt?: Date | string
@@ -302,10 +679,39 @@ export type ShowUncheckedCreateInput = {
   id?: string
   showName: string
   artistName: string
+  email?: string | null
   county: string
   state: string
   town: string
+  mainMedium?: string | null
+  startDate?: string | null
+  endDate?: string | null
+  showHours?: string | null
+  description?: string | null
+  website?: string | null
+  instagram?: string | null
+  facebook?: string | null
+  tiktok?: string | null
+  xTwitter?: string | null
+  onlineStore?: string | null
+  videoLink?: string | null
+  galleryStudioLink?: string | null
+  contactEmail?: string | null
+  mailingListLink?: string | null
+  photoUrl?: string | null
+  photoUrl2?: string | null
+  photoUrl3?: string | null
+  photoUrl4?: string | null
+  photoUrl5?: string | null
+  artistPhotoUrl?: string | null
+  bio?: string | null
+  classes?: string | null
+  services?: string | null
+  commissions?: string | null
+  upcomingShows?: string | null
   plan: $Enums.Plan
+  upgradePackage?: string
+  paymentStatus?: string
   status?: $Enums.ShowStatus
   userId?: string | null
   createdAt?: Date | string
@@ -315,10 +721,39 @@ export type ShowUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  showHours?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  website?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  instagram?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  facebook?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  tiktok?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  xTwitter?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  onlineStore?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  videoLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  galleryStudioLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  contactEmail?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  mailingListLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl2?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl3?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl4?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl5?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  artistPhotoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  bio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  classes?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  services?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  commissions?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  upcomingShows?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   plan?: Prisma.EnumPlanFieldUpdateOperationsInput | $Enums.Plan
+  upgradePackage?: Prisma.StringFieldUpdateOperationsInput | string
+  paymentStatus?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.EnumShowStatusFieldUpdateOperationsInput | $Enums.ShowStatus
   userId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -328,10 +763,39 @@ export type ShowUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  showHours?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  website?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  instagram?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  facebook?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  tiktok?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  xTwitter?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  onlineStore?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  videoLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  galleryStudioLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  contactEmail?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  mailingListLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl2?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl3?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl4?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl5?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  artistPhotoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  bio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  classes?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  services?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  commissions?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  upcomingShows?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   plan?: Prisma.EnumPlanFieldUpdateOperationsInput | $Enums.Plan
+  upgradePackage?: Prisma.StringFieldUpdateOperationsInput | string
+  paymentStatus?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.EnumShowStatusFieldUpdateOperationsInput | $Enums.ShowStatus
   userId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -341,10 +805,39 @@ export type ShowCreateManyInput = {
   id?: string
   showName: string
   artistName: string
+  email?: string | null
   county: string
   state: string
   town: string
+  mainMedium?: string | null
+  startDate?: string | null
+  endDate?: string | null
+  showHours?: string | null
+  description?: string | null
+  website?: string | null
+  instagram?: string | null
+  facebook?: string | null
+  tiktok?: string | null
+  xTwitter?: string | null
+  onlineStore?: string | null
+  videoLink?: string | null
+  galleryStudioLink?: string | null
+  contactEmail?: string | null
+  mailingListLink?: string | null
+  photoUrl?: string | null
+  photoUrl2?: string | null
+  photoUrl3?: string | null
+  photoUrl4?: string | null
+  photoUrl5?: string | null
+  artistPhotoUrl?: string | null
+  bio?: string | null
+  classes?: string | null
+  services?: string | null
+  commissions?: string | null
+  upcomingShows?: string | null
   plan: $Enums.Plan
+  upgradePackage?: string
+  paymentStatus?: string
   status?: $Enums.ShowStatus
   userId?: string | null
   createdAt?: Date | string
@@ -354,10 +847,39 @@ export type ShowUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  showHours?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  website?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  instagram?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  facebook?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  tiktok?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  xTwitter?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  onlineStore?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  videoLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  galleryStudioLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  contactEmail?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  mailingListLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl2?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl3?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl4?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl5?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  artistPhotoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  bio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  classes?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  services?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  commissions?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  upcomingShows?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   plan?: Prisma.EnumPlanFieldUpdateOperationsInput | $Enums.Plan
+  upgradePackage?: Prisma.StringFieldUpdateOperationsInput | string
+  paymentStatus?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.EnumShowStatusFieldUpdateOperationsInput | $Enums.ShowStatus
   userId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -367,10 +889,39 @@ export type ShowUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  showHours?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  website?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  instagram?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  facebook?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  tiktok?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  xTwitter?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  onlineStore?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  videoLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  galleryStudioLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  contactEmail?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  mailingListLink?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl2?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl3?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl4?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  photoUrl5?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  artistPhotoUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  bio?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  classes?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  services?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  commissions?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  upcomingShows?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   plan?: Prisma.EnumPlanFieldUpdateOperationsInput | $Enums.Plan
+  upgradePackage?: Prisma.StringFieldUpdateOperationsInput | string
+  paymentStatus?: Prisma.StringFieldUpdateOperationsInput | string
   status?: Prisma.EnumShowStatusFieldUpdateOperationsInput | $Enums.ShowStatus
   userId?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -380,10 +931,39 @@ export type ShowCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
+  email?: Prisma.SortOrder
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  mainMedium?: Prisma.SortOrder
+  startDate?: Prisma.SortOrder
+  endDate?: Prisma.SortOrder
+  showHours?: Prisma.SortOrder
+  description?: Prisma.SortOrder
+  website?: Prisma.SortOrder
+  instagram?: Prisma.SortOrder
+  facebook?: Prisma.SortOrder
+  tiktok?: Prisma.SortOrder
+  xTwitter?: Prisma.SortOrder
+  onlineStore?: Prisma.SortOrder
+  videoLink?: Prisma.SortOrder
+  galleryStudioLink?: Prisma.SortOrder
+  contactEmail?: Prisma.SortOrder
+  mailingListLink?: Prisma.SortOrder
+  photoUrl?: Prisma.SortOrder
+  photoUrl2?: Prisma.SortOrder
+  photoUrl3?: Prisma.SortOrder
+  photoUrl4?: Prisma.SortOrder
+  photoUrl5?: Prisma.SortOrder
+  artistPhotoUrl?: Prisma.SortOrder
+  bio?: Prisma.SortOrder
+  classes?: Prisma.SortOrder
+  services?: Prisma.SortOrder
+  commissions?: Prisma.SortOrder
+  upcomingShows?: Prisma.SortOrder
   plan?: Prisma.SortOrder
+  upgradePackage?: Prisma.SortOrder
+  paymentStatus?: Prisma.SortOrder
   status?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -393,10 +973,39 @@ export type ShowMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
+  email?: Prisma.SortOrder
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  mainMedium?: Prisma.SortOrder
+  startDate?: Prisma.SortOrder
+  endDate?: Prisma.SortOrder
+  showHours?: Prisma.SortOrder
+  description?: Prisma.SortOrder
+  website?: Prisma.SortOrder
+  instagram?: Prisma.SortOrder
+  facebook?: Prisma.SortOrder
+  tiktok?: Prisma.SortOrder
+  xTwitter?: Prisma.SortOrder
+  onlineStore?: Prisma.SortOrder
+  videoLink?: Prisma.SortOrder
+  galleryStudioLink?: Prisma.SortOrder
+  contactEmail?: Prisma.SortOrder
+  mailingListLink?: Prisma.SortOrder
+  photoUrl?: Prisma.SortOrder
+  photoUrl2?: Prisma.SortOrder
+  photoUrl3?: Prisma.SortOrder
+  photoUrl4?: Prisma.SortOrder
+  photoUrl5?: Prisma.SortOrder
+  artistPhotoUrl?: Prisma.SortOrder
+  bio?: Prisma.SortOrder
+  classes?: Prisma.SortOrder
+  services?: Prisma.SortOrder
+  commissions?: Prisma.SortOrder
+  upcomingShows?: Prisma.SortOrder
   plan?: Prisma.SortOrder
+  upgradePackage?: Prisma.SortOrder
+  paymentStatus?: Prisma.SortOrder
   status?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -406,10 +1015,39 @@ export type ShowMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
+  email?: Prisma.SortOrder
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  mainMedium?: Prisma.SortOrder
+  startDate?: Prisma.SortOrder
+  endDate?: Prisma.SortOrder
+  showHours?: Prisma.SortOrder
+  description?: Prisma.SortOrder
+  website?: Prisma.SortOrder
+  instagram?: Prisma.SortOrder
+  facebook?: Prisma.SortOrder
+  tiktok?: Prisma.SortOrder
+  xTwitter?: Prisma.SortOrder
+  onlineStore?: Prisma.SortOrder
+  videoLink?: Prisma.SortOrder
+  galleryStudioLink?: Prisma.SortOrder
+  contactEmail?: Prisma.SortOrder
+  mailingListLink?: Prisma.SortOrder
+  photoUrl?: Prisma.SortOrder
+  photoUrl2?: Prisma.SortOrder
+  photoUrl3?: Prisma.SortOrder
+  photoUrl4?: Prisma.SortOrder
+  photoUrl5?: Prisma.SortOrder
+  artistPhotoUrl?: Prisma.SortOrder
+  bio?: Prisma.SortOrder
+  classes?: Prisma.SortOrder
+  services?: Prisma.SortOrder
+  commissions?: Prisma.SortOrder
+  upcomingShows?: Prisma.SortOrder
   plan?: Prisma.SortOrder
+  upgradePackage?: Prisma.SortOrder
+  paymentStatus?: Prisma.SortOrder
   status?: Prisma.SortOrder
   userId?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -429,10 +1067,39 @@ export type ShowSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   id?: boolean
   showName?: boolean
   artistName?: boolean
+  email?: boolean
   county?: boolean
   state?: boolean
   town?: boolean
+  mainMedium?: boolean
+  startDate?: boolean
+  endDate?: boolean
+  showHours?: boolean
+  description?: boolean
+  website?: boolean
+  instagram?: boolean
+  facebook?: boolean
+  tiktok?: boolean
+  xTwitter?: boolean
+  onlineStore?: boolean
+  videoLink?: boolean
+  galleryStudioLink?: boolean
+  contactEmail?: boolean
+  mailingListLink?: boolean
+  photoUrl?: boolean
+  photoUrl2?: boolean
+  photoUrl3?: boolean
+  photoUrl4?: boolean
+  photoUrl5?: boolean
+  artistPhotoUrl?: boolean
+  bio?: boolean
+  classes?: boolean
+  services?: boolean
+  commissions?: boolean
+  upcomingShows?: boolean
   plan?: boolean
+  upgradePackage?: boolean
+  paymentStatus?: boolean
   status?: boolean
   userId?: boolean
   createdAt?: boolean
@@ -442,10 +1109,39 @@ export type ShowSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   id?: boolean
   showName?: boolean
   artistName?: boolean
+  email?: boolean
   county?: boolean
   state?: boolean
   town?: boolean
+  mainMedium?: boolean
+  startDate?: boolean
+  endDate?: boolean
+  showHours?: boolean
+  description?: boolean
+  website?: boolean
+  instagram?: boolean
+  facebook?: boolean
+  tiktok?: boolean
+  xTwitter?: boolean
+  onlineStore?: boolean
+  videoLink?: boolean
+  galleryStudioLink?: boolean
+  contactEmail?: boolean
+  mailingListLink?: boolean
+  photoUrl?: boolean
+  photoUrl2?: boolean
+  photoUrl3?: boolean
+  photoUrl4?: boolean
+  photoUrl5?: boolean
+  artistPhotoUrl?: boolean
+  bio?: boolean
+  classes?: boolean
+  services?: boolean
+  commissions?: boolean
+  upcomingShows?: boolean
   plan?: boolean
+  upgradePackage?: boolean
+  paymentStatus?: boolean
   status?: boolean
   userId?: boolean
   createdAt?: boolean
@@ -455,10 +1151,39 @@ export type ShowSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   id?: boolean
   showName?: boolean
   artistName?: boolean
+  email?: boolean
   county?: boolean
   state?: boolean
   town?: boolean
+  mainMedium?: boolean
+  startDate?: boolean
+  endDate?: boolean
+  showHours?: boolean
+  description?: boolean
+  website?: boolean
+  instagram?: boolean
+  facebook?: boolean
+  tiktok?: boolean
+  xTwitter?: boolean
+  onlineStore?: boolean
+  videoLink?: boolean
+  galleryStudioLink?: boolean
+  contactEmail?: boolean
+  mailingListLink?: boolean
+  photoUrl?: boolean
+  photoUrl2?: boolean
+  photoUrl3?: boolean
+  photoUrl4?: boolean
+  photoUrl5?: boolean
+  artistPhotoUrl?: boolean
+  bio?: boolean
+  classes?: boolean
+  services?: boolean
+  commissions?: boolean
+  upcomingShows?: boolean
   plan?: boolean
+  upgradePackage?: boolean
+  paymentStatus?: boolean
   status?: boolean
   userId?: boolean
   createdAt?: boolean
@@ -468,16 +1193,45 @@ export type ShowSelectScalar = {
   id?: boolean
   showName?: boolean
   artistName?: boolean
+  email?: boolean
   county?: boolean
   state?: boolean
   town?: boolean
+  mainMedium?: boolean
+  startDate?: boolean
+  endDate?: boolean
+  showHours?: boolean
+  description?: boolean
+  website?: boolean
+  instagram?: boolean
+  facebook?: boolean
+  tiktok?: boolean
+  xTwitter?: boolean
+  onlineStore?: boolean
+  videoLink?: boolean
+  galleryStudioLink?: boolean
+  contactEmail?: boolean
+  mailingListLink?: boolean
+  photoUrl?: boolean
+  photoUrl2?: boolean
+  photoUrl3?: boolean
+  photoUrl4?: boolean
+  photoUrl5?: boolean
+  artistPhotoUrl?: boolean
+  bio?: boolean
+  classes?: boolean
+  services?: boolean
+  commissions?: boolean
+  upcomingShows?: boolean
   plan?: boolean
+  upgradePackage?: boolean
+  paymentStatus?: boolean
   status?: boolean
   userId?: boolean
   createdAt?: boolean
 }
 
-export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "showName" | "artistName" | "county" | "state" | "town" | "plan" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
+export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "showName" | "artistName" | "email" | "county" | "state" | "town" | "mainMedium" | "startDate" | "endDate" | "showHours" | "description" | "website" | "instagram" | "facebook" | "tiktok" | "xTwitter" | "onlineStore" | "videoLink" | "galleryStudioLink" | "contactEmail" | "mailingListLink" | "photoUrl" | "photoUrl2" | "photoUrl3" | "photoUrl4" | "photoUrl5" | "artistPhotoUrl" | "bio" | "classes" | "services" | "commissions" | "upcomingShows" | "plan" | "upgradePackage" | "paymentStatus" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
 
 export type $ShowPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Show"
@@ -486,10 +1240,39 @@ export type $ShowPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     id: string
     showName: string
     artistName: string
+    email: string | null
     county: string
     state: string
     town: string
+    mainMedium: string | null
+    startDate: string | null
+    endDate: string | null
+    showHours: string | null
+    description: string | null
+    website: string | null
+    instagram: string | null
+    facebook: string | null
+    tiktok: string | null
+    xTwitter: string | null
+    onlineStore: string | null
+    videoLink: string | null
+    galleryStudioLink: string | null
+    contactEmail: string | null
+    mailingListLink: string | null
+    photoUrl: string | null
+    photoUrl2: string | null
+    photoUrl3: string | null
+    photoUrl4: string | null
+    photoUrl5: string | null
+    artistPhotoUrl: string | null
+    bio: string | null
+    classes: string | null
+    services: string | null
+    commissions: string | null
+    upcomingShows: string | null
     plan: $Enums.Plan
+    upgradePackage: string
+    paymentStatus: string
     status: $Enums.ShowStatus
     userId: string | null
     createdAt: Date
@@ -919,10 +1702,39 @@ export interface ShowFieldRefs {
   readonly id: Prisma.FieldRef<"Show", 'String'>
   readonly showName: Prisma.FieldRef<"Show", 'String'>
   readonly artistName: Prisma.FieldRef<"Show", 'String'>
+  readonly email: Prisma.FieldRef<"Show", 'String'>
   readonly county: Prisma.FieldRef<"Show", 'String'>
   readonly state: Prisma.FieldRef<"Show", 'String'>
   readonly town: Prisma.FieldRef<"Show", 'String'>
+  readonly mainMedium: Prisma.FieldRef<"Show", 'String'>
+  readonly startDate: Prisma.FieldRef<"Show", 'String'>
+  readonly endDate: Prisma.FieldRef<"Show", 'String'>
+  readonly showHours: Prisma.FieldRef<"Show", 'String'>
+  readonly description: Prisma.FieldRef<"Show", 'String'>
+  readonly website: Prisma.FieldRef<"Show", 'String'>
+  readonly instagram: Prisma.FieldRef<"Show", 'String'>
+  readonly facebook: Prisma.FieldRef<"Show", 'String'>
+  readonly tiktok: Prisma.FieldRef<"Show", 'String'>
+  readonly xTwitter: Prisma.FieldRef<"Show", 'String'>
+  readonly onlineStore: Prisma.FieldRef<"Show", 'String'>
+  readonly videoLink: Prisma.FieldRef<"Show", 'String'>
+  readonly galleryStudioLink: Prisma.FieldRef<"Show", 'String'>
+  readonly contactEmail: Prisma.FieldRef<"Show", 'String'>
+  readonly mailingListLink: Prisma.FieldRef<"Show", 'String'>
+  readonly photoUrl: Prisma.FieldRef<"Show", 'String'>
+  readonly photoUrl2: Prisma.FieldRef<"Show", 'String'>
+  readonly photoUrl3: Prisma.FieldRef<"Show", 'String'>
+  readonly photoUrl4: Prisma.FieldRef<"Show", 'String'>
+  readonly photoUrl5: Prisma.FieldRef<"Show", 'String'>
+  readonly artistPhotoUrl: Prisma.FieldRef<"Show", 'String'>
+  readonly bio: Prisma.FieldRef<"Show", 'String'>
+  readonly classes: Prisma.FieldRef<"Show", 'String'>
+  readonly services: Prisma.FieldRef<"Show", 'String'>
+  readonly commissions: Prisma.FieldRef<"Show", 'String'>
+  readonly upcomingShows: Prisma.FieldRef<"Show", 'String'>
   readonly plan: Prisma.FieldRef<"Show", 'Plan'>
+  readonly upgradePackage: Prisma.FieldRef<"Show", 'String'>
+  readonly paymentStatus: Prisma.FieldRef<"Show", 'String'>
   readonly status: Prisma.FieldRef<"Show", 'ShowStatus'>
   readonly userId: Prisma.FieldRef<"Show", 'String'>
   readonly createdAt: Prisma.FieldRef<"Show", 'DateTime'>
