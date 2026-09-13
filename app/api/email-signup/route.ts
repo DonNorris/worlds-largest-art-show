@@ -19,7 +19,7 @@ export async function POST(request: Request) {
       create: { email },
     });
 
-    return NextResponse.redirect(new URL("/#email-signup", request.url));
+    return NextResponse.redirect(new URL("/#email-signup", request.url), 303);
   } catch (error) {
     console.error("Email signup error:", error);
 
