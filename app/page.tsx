@@ -31,6 +31,8 @@ export default function Home() {
       .then((res) => res.json())
       .then((data) => setShows(Array.isArray(data) ? data : []))
       .finally(() => setLoading(false));
+      const params = new URLSearchParams(window.location.search);
+setJoined(params.get("joined") === "1");
   }, []);
 
   return (
