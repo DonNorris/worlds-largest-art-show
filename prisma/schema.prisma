@@ -76,3 +76,8 @@ upcomingShows String?
   userId      String?
   createdAt   DateTime   @default(now())
 }
+model EmailSubscriber {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}

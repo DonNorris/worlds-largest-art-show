@@ -82,6 +82,7 @@ export default function Home() {
         </div>
       </section>
 
+
       <section style={section}>
         <h2 style={headline}>Welcome to the World’s Largest Art Show</h2>
         <p style={paragraph}>
@@ -215,14 +216,32 @@ export default function Home() {
     community of artists helping artists succeed.
   </p>
 </section>
-<section style={section}>
+<section id="email-signup" style={section}>
   <h2 style={headline}>Join Our Email List</h2>
 
   <p style={paragraph}>
     Whether you are an artist, collector, gallery owner, teacher, student,
     or art enthusiast, we invite you to join our growing worldwide community.
   </p>
+<form action="/api/email-signup" method="POST" style={{ margin: "30px auto", maxWidth: 600 }}>
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter your email address"
+    required
+    style={{
+      width: "100%",
+      padding: "14px",
+      fontSize: 18,
+      marginBottom: 15,
+      boxSizing: "border-box",
+    }}
+  />
 
+  <button type="submit" style={buttonGold}>
+    Join Our Email List
+  </button>
+</form>
   <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
     <h3>Artists Will Receive:</h3>
 
@@ -250,7 +269,7 @@ export default function Home() {
   </p>
 
   <div style={{ marginTop: 30 }}>
-    <a href="/submit" style={buttonGold}>
+    <a href="#email-signup" style={buttonGold}>
       Join Our Community
     </a>
   </div>

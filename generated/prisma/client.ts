@@ -51,3 +51,8 @@ export type User = Prisma.UserModel
  * 
  */
 export type Show = Prisma.ShowModel
+/**
+ * Model EmailSubscriber
+ * 
+ */
+export type EmailSubscriber = Prisma.EmailSubscriberModel
