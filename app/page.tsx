@@ -24,6 +24,7 @@ type Show = {
 export default function Home() {
   const [shows, setShows] = useState<Show[]>([]);
   const [loading, setLoading] = useState(true);
+  const [joined, setJoined] = useState(false);
 
   useEffect(() => {
     fetch("/api/shows")
@@ -223,6 +224,7 @@ export default function Home() {
     Whether you are an artist, collector, gallery owner, teacher, student,
     or art enthusiast, we invite you to join our growing worldwide community.
   </p>
+  {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold" }}>Thank you! You have joined our email list.</p>}
 <form action="/api/email-signup" method="POST" style={{ margin: "30px auto", maxWidth: 600 }}>
   <input
     type="email"
