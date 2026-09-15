@@ -31,6 +31,7 @@ export default function SubmitPage() {
   });
 
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [photoPreview, setPhotoPreview] = useState("");
   const [photoFile, setPhotoFile] = useState<File | null>(null);
   const [artistPhotoFile, setArtistPhotoFile] = useState<File | null>(null);
@@ -91,6 +92,8 @@ setMessage("Payment successful. Your art show has been saved successfully.");
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (isSubmitting) return;
+setIsSubmitting(true);
     setMessage("Saving...");
 
     let photoUrl = "";
@@ -554,7 +557,7 @@ if (checkoutRes.ok && checkoutData.url) {
   </button>
 </div>
 
-        <button type="submit" style={{ padding: 14, fontWeight: "bold" }}>
+        <button type="submit" disabled={isSubmitting} style={{ padding: 14, fontWeight: "bold" }}>
           Register My Art Show
         </button>
       </form>
