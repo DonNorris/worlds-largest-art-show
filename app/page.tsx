@@ -273,11 +273,7 @@ setJoined(params.get("joined") === "1");
     art supporters, and creative organizations ever assembled.
   </p>
 
-  <div style={{ marginTop: 30 }}>
-    <a href="#email-signup" style={buttonGold}>
-      Join Our Community
-    </a>
-  </div>
+  
 </section>
 <section style={section}>
   <h2 style={headline}>Can Groups Participate?</h2>
@@ -366,7 +362,7 @@ setJoined(params.get("joined") === "1");
           Join artists around the world and become part of art history — for free.
         </p>
         <div style={{ marginTop: 30 }}>
-          <a href="/submit" style={buttonGold}>Submit Your Show</a>
+          <a href="/submit" style={buttonGold}>Register Your Show</a>
         </div>
      
       <section id="directory" style={section}>
