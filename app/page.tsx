@@ -226,7 +226,6 @@ setJoined(params.get("joined") === "1");
     Whether you are an artist, collector, gallery owner, teacher, student,
     or art enthusiast, we invite you to join our growing worldwide community.
   </p>
-  {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold" }}>Thank you! You have joined our email list.</p>}
 <form action="/api/email-signup" method="POST" style={{ margin: "30px auto", maxWidth: 600 }}>
   <input
     type="email"
@@ -245,6 +244,8 @@ setJoined(params.get("joined") === "1");
   <button type="submit" style={buttonGold}>
     Join Our Email List
   </button>
+  {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold", color: "red" }}>Thank you! You have joined our email list.</p>}
+
 </form>
   <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
     <h3>Artists Will Receive:</h3>
