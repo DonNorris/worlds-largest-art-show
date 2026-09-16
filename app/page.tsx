@@ -357,6 +357,17 @@ setJoined(params.get("joined") === "1");
         </p>
       </section>
 
+     
+
+      <section style={finalCta}>
+        <h2 style={statementText}>Art Everywhere. Artists United.</h2>
+        <p style={{ fontSize: 22, lineHeight: 1.6 }}>
+          Join artists around the world and become part of art history — for free.
+        </p>
+        <div style={{ marginTop: 30 }}>
+          <a href="/submit" style={buttonGold}>Submit Your Show</a>
+        </div>
+     
       <section id="directory" style={section}>
         <h2 style={headline}>Submitted Shows</h2>
         <p style={paragraph}>
@@ -447,17 +458,8 @@ setJoined(params.get("joined") === "1");
 </article>
           ))}
         </div>
-      </section>
-
-      <section style={finalCta}>
-        <h2 style={statementText}>Art Everywhere. Artists United.</h2>
-        <p style={{ fontSize: 22, lineHeight: 1.6 }}>
-          Join artists around the world and become part of art history — for free.
-        </p>
-        <div style={{ marginTop: 30 }}>
-          <a href="/submit" style={buttonGold}>Submit Your Show</a>
-        </div>
-      </section>
+      </section> </section>
+   
     </main>
   );
 }
