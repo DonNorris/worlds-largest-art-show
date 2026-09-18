@@ -90,9 +90,9 @@ setJoined(params.get("joined") === "1");
 <img src="/how-it-works.png" alt="How It Works" style={{ width: "100%", display: "block" }} />
 
 
-<section style={section}>
+<section style={{ position: "relative", width: "100vw", marginLeft: "calc(50% - 50vw)", padding: 0 }}>
  <img src="/why-register-your-art-show.png" alt="Why Register Your Art Show" style={{ width: "100%", display: "block" }} />
-  <div style={{ marginTop: 30 }}>
+  <div style={{ position: "absolute", right: "5%", bottom: "4%" }}>
     <a href="/submit" style={buttonGold}>Register Your Art Show</a>
   </div>
 </section>
