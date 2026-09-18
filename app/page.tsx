@@ -86,15 +86,7 @@ setJoined(params.get("joined") === "1");
       </section>
 
 
-      <section style={section}>
-        <h2 style={headline}>Welcome to the World’s Largest Art Show</h2>
-        <p style={paragraph}>
-          For the first time in history, artists everywhere in the world can participate together in one global art event — absolutely free.
-        </p>
-        <p style={paragraph}>
-          Artists around the world will hold their own art shows, exhibits, studio tours, demonstrations, online events, gallery openings, and creative experiences in their own communities and countries — all during the same nine-day worldwide celebration of art.
-        </p>
-      </section>
+     <img src="/welcome-art-show.png" alt="Welcome to the World's Largest Art Show" style={{ width: "100%", display: "block" }} />
 <section style={section}>
   <h2 style={headline}>How It Works</h2>
 
