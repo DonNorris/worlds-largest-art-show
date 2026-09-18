@@ -86,7 +86,7 @@ setJoined(params.get("joined") === "1");
       </section>
 
 
-     <img src="/welcome-art-show.png" alt="Welcome to the World's Largest Art Show" style={{ width: "100%", display: "block" }} />
+     <img src="/welcome-art-show-new.png" alt="Welcome to the World's Largest Art Show" style={{ width: "100%", display: "block" }} />
 <section style={section}>
   <h2 style={headline}>How It Works</h2>
 
