@@ -96,40 +96,7 @@ setJoined(params.get("joined") === "1");
     <a href="/submit" style={{ ...buttonGold, transform: "scale(1.5)" }}>Register Your Art Show</a>
   </div>
 </section>
-<section style={section}>
-  <h2 style={headline}>Artist Success Center</h2>
-
-  <p style={paragraph}>
-    One of the goals of the World’s Largest Art Show is not only to help
-    artists participate, but to help them have successful events.
-  </p>
-
-  <p style={paragraph}>
-    Participating artists will receive free ideas, articles, and resources
-    based on more than 50 years of experience teaching art, organizing
-    events, promoting creativity, and helping artists reach their goals.
-  </p>
-
-  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
-    <h3>Topics Include:</h3>
-
-    <ul style={{ fontSize: 20, lineHeight: 2 }}>
-      <li>Planning a successful art show</li>
-      <li>Attracting more visitors</li>
-      <li>Promoting your event on social media</li>
-      <li>Display and presentation ideas</li>
-      <li>Working with local media</li>
-      <li>Using AI tools to help artists</li>
-      <li>Creating a better visitor experience</li>
-      <li>Increasing art sales and commissions</li>
-    </ul>
-  </div>
-
-  <p style={paragraph}>
-    New resources and tips will be added regularly as we build a worldwide
-    community of artists helping artists succeed.
-  </p>
-</section>
+<img src="/artist-success-center.png" alt="Artist Success Center" style={{ width: "100%", display: "block" }} />
 <section id="email-signup" style={section}>
   <h2 style={headline}>Join Our Email List</h2>
 
