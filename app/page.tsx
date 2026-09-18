@@ -87,46 +87,8 @@ setJoined(params.get("joined") === "1");
 
 
      <img src="/welcome-art-show-new.png" alt="Welcome to the World's Largest Art Show" style={{ width: "100%", display: "block" }} />
-<section style={section}>
-  <h2 style={headline}>How It Works</h2>
+<img src="/how-it-works.png" alt="How It Works" style={{ width: "100%", display: "block" }} />
 
-  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
-    <div style={{ marginBottom: 30 }}>
-      <h3>Step 1 — Register Your Art Show</h3>
-      <p style={paragraph}>
-        Registration is free. Tell the world about your art show,
-        exhibit, studio tour, gallery event, demonstration, workshop,
-        online event, or creative experience.
-      </p>
-    </div>
-
-    <div style={{ marginBottom: 30 }}>
-      <h3>Step 2 — Plan Your Event</h3>
-      <p style={paragraph}>
-        You decide when, where, and how you participate. One hour,
-        one day, or all nine days. Any location. Any size event.
-      </p>
-    </div>
-
-    <div style={{ marginBottom: 30 }}>
-      <h3>Step 3 — Promote Your Event</h3>
-      <p style={paragraph}>
-        Use your website, social media, email list, friends,
-        customers, galleries, schools, clubs, and local media
-        to invite visitors.
-      </p>
-    </div>
-
-    <div>
-      <h3>Step 4 — Become Part of Art History</h3>
-      <p style={paragraph}>
-        Together, artists around the world become part of a single
-        worldwide celebration of creativity, imagination, and artistic
-        expression.
-      </p>
-    </div>
-  </div>
-</section>
 
 <section style={section}>
   <h2 style={headline}>Why Register Your Art Show?</h2>
