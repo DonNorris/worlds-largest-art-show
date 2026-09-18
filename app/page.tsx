@@ -91,50 +91,7 @@ setJoined(params.get("joined") === "1");
 
 
 <section style={section}>
-  <h2 style={headline}>Why Register Your Art Show?</h2>
-
-  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
-    <div style={{ marginBottom: 30 }}>
-      <h3>Free Worldwide Participation</h3>
-      <p style={paragraph}>
-        Registration is free. Every artist can participate, regardless of
-        experience, location, or financial resources.
-      </p>
-    </div>
-
-    <div style={{ marginBottom: 30 }}>
-      <h3>Be Found by Visitors</h3>
-      <p style={paragraph}>
-        Your show becomes part of a searchable worldwide directory where
-        visitors can discover art shows by city, state, country, and art type.
-      </p>
-    </div>
-
-    <div style={{ marginBottom: 30 }}>
-      <h3>Promote Your Art Your Way</h3>
-      <p style={paragraph}>
-        Your show can be held in a studio, gallery, home, school, storefront,
-        community center, online event, outdoor space, or anywhere you choose.
-      </p>
-    </div>
-
-    <div style={{ marginBottom: 30 }}>
-      <h3>Receive Free Artist Success Tips</h3>
-      <p style={paragraph}>
-        Participating artists will receive free ideas and guidance for planning,
-        promoting, displaying, and improving their shows.
-      </p>
-    </div>
-
-    <div>
-      <h3>Become Part of Art History</h3>
-      <p style={paragraph}>
-        By registering, you join artists around the world in creating one
-        global celebration of creativity.
-      </p>
-    </div>
-  </div>
-
+ <img src="/why-register-your-art-show.png" alt="Why Register Your Art Show" style={{ width: "100%", display: "block" }} />
   <div style={{ marginTop: 30 }}>
     <a href="/submit" style={buttonGold}>Register Your Art Show</a>
   </div>
