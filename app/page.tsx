@@ -98,7 +98,7 @@ setJoined(params.get("joined") === "1");
 </section>
 <img src="/artist-success-center.png" alt="Artist Success Center" style={{ width: "100%", display: "block" }} />
 <section id="email-signup" style={section}>
- <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100vw", marginLeft: "calc(50% - 50vw)", display: "block" }} />
+ <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "200%", maxWidth: "none", display: "block" }} />
 <form action="/api/email-signup" method="POST" style={{ margin: "10px auto", maxWidth: 600 }}>
   <input
     type="email"
