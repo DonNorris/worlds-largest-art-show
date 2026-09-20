@@ -98,12 +98,7 @@ setJoined(params.get("joined") === "1");
 </section>
 <img src="/artist-success-center.png" alt="Artist Success Center" style={{ width: "100%", display: "block" }} />
 <section id="email-signup" style={section}>
-  <h2 style={headline}>Join Our Email List</h2>
-
-  <p style={paragraph}>
-    Whether you are an artist, collector, gallery owner, teacher, student,
-    or art enthusiast, we invite you to join our growing worldwide community.
-  </p>
+ <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100%", display: "block" }} />
 <form action="/api/email-signup" method="POST" style={{ margin: "30px auto", maxWidth: 600 }}>
   <input
     type="email"
