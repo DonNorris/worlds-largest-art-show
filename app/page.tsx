@@ -97,10 +97,10 @@ setJoined(params.get("joined") === "1");
   </div>
 </section>
 <img src="/artist-success-center.png" alt="Artist Success Center" style={{ width: "100%", display: "block" }} />
-<img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100%", display: "block" }} />
+<div style={{ position: "relative", width: "100%" }}>
 <section id="email-signup" style={section}>
- 
-<form action="/api/email-signup" method="POST" style={{ margin: "10px auto", maxWidth: 600 }}>
+ <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100%", display: "block" }} />
+<form action="/api/email-signup" method="POST" style={{ position: "absolute", top: "27%", left: "50%", transform: "translateX(-50%)", width: "46%", maxWidth: 600, zIndex: 2 }}>
   <input
     type="email"
     name="email"
@@ -125,6 +125,7 @@ setJoined(params.get("joined") === "1");
 
   
 </section>
+</div>
 <section style={section}>
   <h2 style={headline}>Can Groups Participate?</h2>
 
