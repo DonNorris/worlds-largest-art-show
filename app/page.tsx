@@ -97,8 +97,9 @@ setJoined(params.get("joined") === "1");
   </div>
 </section>
 <img src="/artist-success-center.png" alt="Artist Success Center" style={{ width: "100%", display: "block" }} />
+<img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100%", display: "block" }} />
 <section id="email-signup" style={section}>
- <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "200%", maxWidth: "none", display: "block" }} />
+ 
 <form action="/api/email-signup" method="POST" style={{ margin: "10px auto", maxWidth: 600 }}>
   <input
     type="email"
@@ -120,31 +121,7 @@ setJoined(params.get("joined") === "1");
   {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold", color: "red" }}>Thank you! You have joined our email list.</p>}
 
 </form>
-  <div style={{ maxWidth: 900, margin: "40px auto", textAlign: "left" }}>
-    <h3>Artists Will Receive:</h3>
-
-    <ul style={{ fontSize: 20, lineHeight: 2 }}>
-      <li>World's Largest Art Show updates</li>
-      <li>Free Artist Success Tips</li>
-      <li>Promotion and marketing ideas</li>
-      <li>New resources and articles</li>
-      <li>Participation announcements and reminders</li>
-    </ul>
-
-    <h3 style={{ marginTop: 40 }}>Visitors Will Receive:</h3>
-
-    <ul style={{ fontSize: 20, lineHeight: 2 }}>
-      <li>Featured artists and art shows</li>
-      <li>Upcoming events and announcements</li>
-      <li>Special art-related content</li>
-      <li>Updates from around the world</li>
-    </ul>
-  </div>
-
-  <p style={paragraph}>
-    Our goal is to build the largest worldwide community of artists,
-    art supporters, and creative organizations ever assembled.
-  </p>
+  
 
   
 </section>
