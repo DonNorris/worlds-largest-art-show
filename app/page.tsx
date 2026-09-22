@@ -115,7 +115,7 @@ setJoined(params.get("joined") === "1");
     }}
   />
 
-  <button type="submit" style={buttonGold}>
+  <button type="submit" style={{ ...buttonGold, position: "absolute", top: "37%", left: "27%", transform: "translateX(-50%)" }}>
     Join Our Email List
   </button>
   {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold", color: "red" }}>Thank you! You have joined our email list.</p>}
