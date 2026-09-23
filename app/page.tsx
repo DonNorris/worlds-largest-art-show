@@ -127,7 +127,12 @@ setJoined(params.get("joined") === "1");
   
 </section>
 </div>
-<img src="/can-groups-join.png" alt="Can Groups Participate?" style={{ width: "100%", display: "block" }} />
+<section style={{ position: "relative", width: "100vw", marginLeft: "calc(50% - 50vw)", padding: 0 }}>
+  <img src="/can-groups-join.png" alt="Can Groups Participate?" style={{ width: "100%", display: "block" }} />
+  <div style={{ position: "absolute", left: "10%", bottom: "6%" }}>
+  <a href="/submit" style={{ ...buttonGold, transform: "scale(1.5)" }}>Register Your Art Show</a>
+</div>
+</section>
       <section style={darkStatement}>
         <h2 style={statementText}>
           The World Has Never Had One Art Show for Everyone — Until Now.
