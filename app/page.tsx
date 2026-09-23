@@ -135,19 +135,7 @@ setJoined(params.get("joined") === "1");
 </section>
   <img src="/worldwide-art-show.png" alt="Worldwide Art Show" style={{ width: "100%", display: "block" }} />    
 
-      <section style={section}>
-        <h2 style={headline}>About the Founder</h2>
-        <p style={paragraph}>
-          My name is Don Norris — artist, educator, silversmith, jewelry maker, pewter sculptor, and author. For more than 50 years, I have taught silversmithing, jewelry making, lost wax casting, and hands-on art experiences throughout all 50 states in the United States.
-        </p>
-        <p style={paragraph}>
-          For nearly 20 years, I have carried the vision for this event, believing that one day technology could connect artists everywhere in the world. Today, through the power of the internet and AI, that dream is finally becoming possible.
-        </p>
-        <p style={paragraph}>
-          This show is about artists helping artists succeed — inspiring creativity, increasing visibility, attracting new audiences and buyers, and celebrating art around the world.
-        </p>
-      </section>
-
+     
       <section style={section}>
         <h2 style={headline}>This Is Not About Competition</h2>
         <p style={paragraph}>
