@@ -136,23 +136,14 @@ setJoined(params.get("joined") === "1");
   <img src="/worldwide-art-show.png" alt="Worldwide Art Show" style={{ width: "100%", display: "block" }} />    
 <img src="/about-the-founder.png" alt="About the Founder" style={{ width: "100%", display: "block" }} />
      
-      <section style={section}>
-        <h2 style={headline}>This Is Not About Competition</h2>
-        <p style={paragraph}>
-          This is about participation, creativity, community, opportunity, and giving every artist a chance to be seen.
-        </p>
-        <p style={paragraph}>
-          Whether you display your work in a gallery, studio, home, school, storefront, community center, online event, outdoor festival, or even on a sidewalk, you become part of something larger — a worldwide celebration of creativity and human expression.
-        </p>
-      </section>
-
+     <img src="/not-a-competition.png" alt="This Is Not About Competition" style={{ width: "100%", display: "block" }} />
      
 
       <section style={finalCta}>
         <h2 style={statementText}>Art Everywhere. Artists United.</h2>
         <p style={{ fontSize: 22, lineHeight: 1.6 }}>
           Join artists around the world and become part of art history — for free.
-        </p>
+        </p>ss
         <div style={{ marginTop: 30 }}>
           <a href="/submit" style={buttonGold}>Register Your Show</a>
         </div>
