@@ -112,6 +112,7 @@ setJoined(params.get("joined") === "1");
       fontSize: 18,
       marginBottom: 15,
       boxSizing: "border-box",
+      border: "2px solid black",
     }}
   />
 
