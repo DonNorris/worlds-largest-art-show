@@ -134,7 +134,7 @@ setJoined(params.get("joined") === "1");
 </div>
 </section>
   <img src="/worldwide-art-show.png" alt="Worldwide Art Show" style={{ width: "100%", display: "block" }} />    
-
+<img src="/about-the-founder.png" alt="About the Founder" style={{ width: "100%", display: "block" }} />
      
       <section style={section}>
         <h2 style={headline}>This Is Not About Competition</h2>
@@ -146,7 +146,7 @@ setJoined(params.get("joined") === "1");
         </p>
       </section>
 
-     <img src="/about-the-founder.png" alt="About the Founder" style={{ width: "100%", display: "block" }} />
+     
 
       <section style={finalCta}>
         <h2 style={statementText}>Art Everywhere. Artists United.</h2>
