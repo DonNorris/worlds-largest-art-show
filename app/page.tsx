@@ -127,40 +127,7 @@ setJoined(params.get("joined") === "1");
   
 </section>
 </div>
-<section style={section}>
-  <h2 style={headline}>Can Groups Participate?</h2>
-
-  <p style={paragraph}>
-    Absolutely.
-  </p>
-
-  <p style={paragraph}>
-    Art clubs, schools, galleries, guilds, associations, museums,
-    community organizations, and creative groups are welcome to
-    participate in the World's Largest Art Show.
-  </p>
-
-  <p style={paragraph}>
-    A group may register its event, exhibition, festival, open studio,
-    or art show as a single listing.
-  </p>
-
-  <p style={paragraph}>
-    Individual artists participating within that group event may also
-    register their own shows, displays, demonstrations, or activities.
-  </p>
-
-  <p style={paragraph}>
-    This helps promote both the group event and the individual artists,
-    while making it easier for visitors to discover creative events and
-    artists around the world.
-  </p>
-
-  <p style={paragraph}>
-    The goal is simple: help more artists be found, seen, appreciated,
-    and supported.
-  </p>
-</section>
+<img src="/can-groups-join.png" alt="Can Groups Participate?" style={{ width: "100%", display: "block" }} />
       <section style={darkStatement}>
         <h2 style={statementText}>
           The World Has Never Had One Art Show for Everyone — Until Now.
