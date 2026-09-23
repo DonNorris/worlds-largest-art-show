@@ -117,7 +117,7 @@ setJoined(params.get("joined") === "1");
   />
 
 
-  {joined && <p style={{ textAlign: "center", fontSize: 22, fontWeight: "bold", color: "red" }}>Thank you! You have joined our email list.</p>}
+  {joined && <p style={{ position: "absolute", bottom: "100%", left: 0, width: "100%", textAlign: "center", fontSize: 22, fontWeight: "bold", color: "red", marginBottom: 10 }}>Thank you! You have joined our email list.</p>}
 
 </form>
   
