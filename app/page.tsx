@@ -133,27 +133,7 @@ setJoined(params.get("joined") === "1");
   <a href="/submit" style={{ ...buttonGold, transform: "scale(1.5)" }}>Register Your Art Show</a>
 </div>
 </section>
-      <section style={darkStatement}>
-        <h2 style={statementText}>
-          The World Has Never Had One Art Show for Everyone — Until Now.
-        </h2>
-      </section>
-
-      <section style={section}>
-        <h2 style={headline}>You Decide When. You Decide Where.</h2>
-        <p style={paragraph}>
-          One hour, one day, or all nine days. Anywhere and everywhere in the world.
-        </p>
-        <p style={paragraph}>
-          What makes this the World’s Largest Art Show is that together we create one worldwide celebration of creativity, imagination, and artistic expression.
-        </p>
-      </section>
-
-      <section style={goldStatement}>
-        <h2 style={statementTextDark}>
-          Every Artist. Every Country. One Worldwide Celebration of Art.
-        </h2>
-      </section>
+  <img src="/worldwide-art-show.png" alt="Worldwide Art Show" style={{ width: "100%", display: "block" }} />    
 
       <section style={section}>
         <h2 style={headline}>About the Founder</h2>
