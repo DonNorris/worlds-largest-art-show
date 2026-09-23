@@ -100,7 +100,7 @@ setJoined(params.get("joined") === "1");
 <div style={{ position: "relative", width: "100vw", marginLeft: "calc(50% - 50vw)", padding: 0 }}>
 <section id="email-signup">
  <img src="/join-email-list.png" alt="Join Our Email List" style={{ width: "100%", display: "block" }} />
-<form action="/api/email-signup" method="POST" style={{ position: "absolute", top: "32%", left: "65%", transform: "translateX(-50%)", width: "46%", maxWidth: 600, zIndex: 2 }}>
+<form action="/api/email-signup" method="POST" style={{ position: "absolute", top: "37%", left: "65%", transform: "translateX(-50%)", width: "46%", maxWidth: 600, zIndex: 2 }}>
   <input
     type="email"
     name="email"
