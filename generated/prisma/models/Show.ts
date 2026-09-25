@@ -32,6 +32,7 @@ export type ShowMinAggregateOutputType = {
   county: string | null
   state: string | null
   town: string | null
+  showAddress: string | null
   mainMedium: string | null
   startDate: string | null
   endDate: string | null
@@ -74,6 +75,7 @@ export type ShowMaxAggregateOutputType = {
   county: string | null
   state: string | null
   town: string | null
+  showAddress: string | null
   mainMedium: string | null
   startDate: string | null
   endDate: string | null
@@ -116,6 +118,7 @@ export type ShowCountAggregateOutputType = {
   county: number
   state: number
   town: number
+  showAddress: number
   mainMedium: number
   startDate: number
   endDate: number
@@ -160,6 +163,7 @@ export type ShowMinAggregateInputType = {
   county?: true
   state?: true
   town?: true
+  showAddress?: true
   mainMedium?: true
   startDate?: true
   endDate?: true
@@ -202,6 +206,7 @@ export type ShowMaxAggregateInputType = {
   county?: true
   state?: true
   town?: true
+  showAddress?: true
   mainMedium?: true
   startDate?: true
   endDate?: true
@@ -244,6 +249,7 @@ export type ShowCountAggregateInputType = {
   county?: true
   state?: true
   town?: true
+  showAddress?: true
   mainMedium?: true
   startDate?: true
   endDate?: true
@@ -359,6 +365,7 @@ export type ShowGroupByOutputType = {
   county: string
   state: string
   town: string
+  showAddress: string | null
   mainMedium: string | null
   startDate: string | null
   endDate: string | null
@@ -422,6 +429,7 @@ export type ShowWhereInput = {
   county?: Prisma.StringFilter<"Show"> | string
   state?: Prisma.StringFilter<"Show"> | string
   town?: Prisma.StringFilter<"Show"> | string
+  showAddress?: Prisma.StringNullableFilter<"Show"> | string | null
   mainMedium?: Prisma.StringNullableFilter<"Show"> | string | null
   startDate?: Prisma.StringNullableFilter<"Show"> | string | null
   endDate?: Prisma.StringNullableFilter<"Show"> | string | null
@@ -464,6 +472,7 @@ export type ShowOrderByWithRelationInput = {
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  showAddress?: Prisma.SortOrderInput | Prisma.SortOrder
   mainMedium?: Prisma.SortOrderInput | Prisma.SortOrder
   startDate?: Prisma.SortOrderInput | Prisma.SortOrder
   endDate?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -509,6 +518,7 @@ export type ShowWhereUniqueInput = Prisma.AtLeast<{
   county?: Prisma.StringFilter<"Show"> | string
   state?: Prisma.StringFilter<"Show"> | string
   town?: Prisma.StringFilter<"Show"> | string
+  showAddress?: Prisma.StringNullableFilter<"Show"> | string | null
   mainMedium?: Prisma.StringNullableFilter<"Show"> | string | null
   startDate?: Prisma.StringNullableFilter<"Show"> | string | null
   endDate?: Prisma.StringNullableFilter<"Show"> | string | null
@@ -551,6 +561,7 @@ export type ShowOrderByWithAggregationInput = {
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  showAddress?: Prisma.SortOrderInput | Prisma.SortOrder
   mainMedium?: Prisma.SortOrderInput | Prisma.SortOrder
   startDate?: Prisma.SortOrderInput | Prisma.SortOrder
   endDate?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -599,6 +610,7 @@ export type ShowScalarWhereWithAggregatesInput = {
   county?: Prisma.StringWithAggregatesFilter<"Show"> | string
   state?: Prisma.StringWithAggregatesFilter<"Show"> | string
   town?: Prisma.StringWithAggregatesFilter<"Show"> | string
+  showAddress?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   mainMedium?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   startDate?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   endDate?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
@@ -641,6 +653,7 @@ export type ShowCreateInput = {
   county: string
   state: string
   town: string
+  showAddress?: string | null
   mainMedium?: string | null
   startDate?: string | null
   endDate?: string | null
@@ -683,6 +696,7 @@ export type ShowUncheckedCreateInput = {
   county: string
   state: string
   town: string
+  showAddress?: string | null
   mainMedium?: string | null
   startDate?: string | null
   endDate?: string | null
@@ -725,6 +739,7 @@ export type ShowUpdateInput = {
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  showAddress?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -767,6 +782,7 @@ export type ShowUncheckedUpdateInput = {
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  showAddress?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -809,6 +825,7 @@ export type ShowCreateManyInput = {
   county: string
   state: string
   town: string
+  showAddress?: string | null
   mainMedium?: string | null
   startDate?: string | null
   endDate?: string | null
@@ -851,6 +868,7 @@ export type ShowUpdateManyMutationInput = {
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  showAddress?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -893,6 +911,7 @@ export type ShowUncheckedUpdateManyInput = {
   county?: Prisma.StringFieldUpdateOperationsInput | string
   state?: Prisma.StringFieldUpdateOperationsInput | string
   town?: Prisma.StringFieldUpdateOperationsInput | string
+  showAddress?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   mainMedium?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   startDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   endDate?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -935,6 +954,7 @@ export type ShowCountOrderByAggregateInput = {
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  showAddress?: Prisma.SortOrder
   mainMedium?: Prisma.SortOrder
   startDate?: Prisma.SortOrder
   endDate?: Prisma.SortOrder
@@ -977,6 +997,7 @@ export type ShowMaxOrderByAggregateInput = {
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  showAddress?: Prisma.SortOrder
   mainMedium?: Prisma.SortOrder
   startDate?: Prisma.SortOrder
   endDate?: Prisma.SortOrder
@@ -1019,6 +1040,7 @@ export type ShowMinOrderByAggregateInput = {
   county?: Prisma.SortOrder
   state?: Prisma.SortOrder
   town?: Prisma.SortOrder
+  showAddress?: Prisma.SortOrder
   mainMedium?: Prisma.SortOrder
   startDate?: Prisma.SortOrder
   endDate?: Prisma.SortOrder
@@ -1071,6 +1093,7 @@ export type ShowSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   county?: boolean
   state?: boolean
   town?: boolean
+  showAddress?: boolean
   mainMedium?: boolean
   startDate?: boolean
   endDate?: boolean
@@ -1113,6 +1136,7 @@ export type ShowSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   county?: boolean
   state?: boolean
   town?: boolean
+  showAddress?: boolean
   mainMedium?: boolean
   startDate?: boolean
   endDate?: boolean
@@ -1155,6 +1179,7 @@ export type ShowSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
   county?: boolean
   state?: boolean
   town?: boolean
+  showAddress?: boolean
   mainMedium?: boolean
   startDate?: boolean
   endDate?: boolean
@@ -1197,6 +1222,7 @@ export type ShowSelectScalar = {
   county?: boolean
   state?: boolean
   town?: boolean
+  showAddress?: boolean
   mainMedium?: boolean
   startDate?: boolean
   endDate?: boolean
@@ -1231,7 +1257,7 @@ export type ShowSelectScalar = {
   createdAt?: boolean
 }
 
-export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "showName" | "artistName" | "email" | "county" | "state" | "town" | "mainMedium" | "startDate" | "endDate" | "showHours" | "description" | "website" | "instagram" | "facebook" | "tiktok" | "xTwitter" | "onlineStore" | "videoLink" | "galleryStudioLink" | "contactEmail" | "mailingListLink" | "photoUrl" | "photoUrl2" | "photoUrl3" | "photoUrl4" | "photoUrl5" | "artistPhotoUrl" | "bio" | "classes" | "services" | "commissions" | "upcomingShows" | "plan" | "upgradePackage" | "paymentStatus" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
+export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "showName" | "artistName" | "email" | "county" | "state" | "town" | "showAddress" | "mainMedium" | "startDate" | "endDate" | "showHours" | "description" | "website" | "instagram" | "facebook" | "tiktok" | "xTwitter" | "onlineStore" | "videoLink" | "galleryStudioLink" | "contactEmail" | "mailingListLink" | "photoUrl" | "photoUrl2" | "photoUrl3" | "photoUrl4" | "photoUrl5" | "artistPhotoUrl" | "bio" | "classes" | "services" | "commissions" | "upcomingShows" | "plan" | "upgradePackage" | "paymentStatus" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
 
 export type $ShowPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Show"
@@ -1244,6 +1270,7 @@ export type $ShowPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs =
     county: string
     state: string
     town: string
+    showAddress: string | null
     mainMedium: string | null
     startDate: string | null
     endDate: string | null
@@ -1706,6 +1733,7 @@ export interface ShowFieldRefs {
   readonly county: Prisma.FieldRef<"Show", 'String'>
   readonly state: Prisma.FieldRef<"Show", 'String'>
   readonly town: Prisma.FieldRef<"Show", 'String'>
+  readonly showAddress: Prisma.FieldRef<"Show", 'String'>
   readonly mainMedium: Prisma.FieldRef<"Show", 'String'>
   readonly startDate: Prisma.FieldRef<"Show", 'String'>
   readonly endDate: Prisma.FieldRef<"Show", 'String'>

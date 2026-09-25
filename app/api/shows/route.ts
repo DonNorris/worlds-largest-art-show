@@ -14,6 +14,7 @@ export async function POST(request: Request) {
   county: body.county,
   state: body.state,
   town: body.town,
+  showAddress: body.showAddress,
   mainMedium: body.mainMedium,
   startDate: body.startDate,
   endDate: body.endDate,

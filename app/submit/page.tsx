@@ -16,6 +16,7 @@ export default function SubmitPage() {
     county: "",
     state: "",
     town: "",
+    showAddress: "",
     mainMedium: "",
     startDate: "",
     endDate: "",
@@ -593,6 +594,18 @@ export default function SubmitPage() {
                   }
                 />
               </div>
+              <div>
+  <label style={labelStyle}>Show Address (Optional)</label>
+  <input
+    id="showAddress"
+    value={form.showAddress}
+    style={inputStyle}
+    onChange={(e) =>
+      updateForm("showAddress", e.target.value)
+    }
+    placeholder="Street address or location of your show"
+  />
+</div>
 
               <div>
                 <label style={labelStyle}>State/Province</label>

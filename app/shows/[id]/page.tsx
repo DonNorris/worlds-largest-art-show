@@ -235,6 +235,9 @@ export default async function ShowPage({
                 marginBottom: 6,
               }}
             >
+              {show.showAddress && (
+  <div>{show.showAddress}</div>
+)}
               {[show.town, show.state, show.county]
                 .filter(Boolean)
                 .join(", ")}

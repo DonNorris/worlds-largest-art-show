@@ -687,6 +687,7 @@ export const ShowScalarFieldEnum = {
   county: 'county',
   state: 'state',
   town: 'town',
+  showAddress: 'showAddress',
   mainMedium: 'mainMedium',
   startDate: 'startDate',
   endDate: 'endDate',
