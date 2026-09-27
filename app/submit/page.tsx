@@ -57,30 +57,34 @@ export default function SubmitPage() {
   const [upcomingShows, setUpcomingShows] = useState("");
 
   useEffect(() => {
-    async function handlePaymentReturn() {
-      const savedForm = localStorage.getItem("pendingShowForm");
+   async function handlePaymentReturn() {
+  const params = new URLSearchParams(window.location.search);
+  const payment = params.get("payment");
+  const sessionId = params.get("session_id");
 
-      if (savedForm) {
-        const parsed = JSON.parse(savedForm);
-        setForm((current) => ({
-          ...current,
-          ...parsed,
-        }));
+  if (payment !== "success" || !sessionId) {
+    localStorage.removeItem("pendingShowForm");
+    return;
+  }
 
-        setBio(parsed.bio || "");
-        setClasses(parsed.classes || "");
-        setServices(parsed.services || "");
-        setCommissions(parsed.commissions || "");
-        setUpcomingShows(parsed.upcomingShows || "");
-      }
+  const savedForm = localStorage.getItem("pendingShowForm");
 
-      const params = new URLSearchParams(window.location.search);
-      const payment = params.get("payment");
-      const sessionId = params.get("session_id");
+  if (!savedForm) {
+    return;
+  }
 
-      if (payment !== "success" || !sessionId || !savedForm) {
-        return;
-      }
+  const parsed = JSON.parse(savedForm);
+
+  setForm((current) => ({
+    ...current,
+    ...parsed,
+  }));
+
+  setBio(parsed.bio || "");
+  setClasses(parsed.classes || "");
+  setServices(parsed.services || "");
+  setCommissions(parsed.commissions || "");
+  setUpcomingShows(parsed.upcomingShows || "");
 
       setMessage("Verifying payment...");
 
