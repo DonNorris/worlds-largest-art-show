@@ -1711,7 +1711,7 @@ export default function SubmitPage() {
               >
                 {isSubmitting
                   ? "PLEASE WAIT..."
-                  : "REGISTER MY ART SHOW  ›"}
+                  : "REGISTER MY ART SHOW — FREE ➜"}
               </button>
             </div>
 
