@@ -542,18 +542,30 @@ export default function SubmitPage() {
               }}
             >
               <div>
-                <label style={labelStyle}>Your Name (Artist/Show Name)</label>
-                <input
-                  id="showName"
-                  required
-                  value={form.showName}
-                  style={inputStyle}
-                  onChange={(e) => {
-                    updateForm("showName", e.target.value);
-                    updateForm("artistName", e.target.value);
-                  }}
-                />
-              </div>
+  <label style={labelStyle}>Art Show Name</label>
+  <input
+    id="showName"
+    required
+    value={form.showName}
+    style={inputStyle}
+    onChange={(e) =>
+      updateForm("showName", e.target.value)
+    }
+  />
+</div>
+
+<div>
+  <label style={labelStyle}>Artist Name</label>
+  <input
+    id="artistName"
+    required
+    value={form.artistName}
+    style={inputStyle}
+    onChange={(e) =>
+      updateForm("artistName", e.target.value)
+    }
+  />
+</div>
 
               <div>
                 <label style={labelStyle}>Main Type of Art</label>
