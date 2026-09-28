@@ -415,7 +415,7 @@ export default function SubmitPage() {
         {/* TOP ART BANNER */}
         <section
           style={{
-            minHeight: 180,
+            minHeight: 210,
             padding: "22px 30px",
             backgroundImage:
               "linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.12)), url('/art-background.png')",
