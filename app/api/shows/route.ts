@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   mailingListLink: body.mailingListLink,
   plan: body.plan,
   upgradePackage: body.upgradePackage,
-  
+  artShowNumber: Math.floor(100000 + Math.random() * 900000).toString(),
   status: "DRAFT",
 },
     });

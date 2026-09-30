@@ -26,6 +26,7 @@ export type AggregateShow = {
 
 export type ShowMinAggregateOutputType = {
   id: string | null
+  artShowNumber: string | null
   showName: string | null
   artistName: string | null
   email: string | null
@@ -69,6 +70,7 @@ export type ShowMinAggregateOutputType = {
 
 export type ShowMaxAggregateOutputType = {
   id: string | null
+  artShowNumber: string | null
   showName: string | null
   artistName: string | null
   email: string | null
@@ -112,6 +114,7 @@ export type ShowMaxAggregateOutputType = {
 
 export type ShowCountAggregateOutputType = {
   id: number
+  artShowNumber: number
   showName: number
   artistName: number
   email: number
@@ -157,6 +160,7 @@ export type ShowCountAggregateOutputType = {
 
 export type ShowMinAggregateInputType = {
   id?: true
+  artShowNumber?: true
   showName?: true
   artistName?: true
   email?: true
@@ -200,6 +204,7 @@ export type ShowMinAggregateInputType = {
 
 export type ShowMaxAggregateInputType = {
   id?: true
+  artShowNumber?: true
   showName?: true
   artistName?: true
   email?: true
@@ -243,6 +248,7 @@ export type ShowMaxAggregateInputType = {
 
 export type ShowCountAggregateInputType = {
   id?: true
+  artShowNumber?: true
   showName?: true
   artistName?: true
   email?: true
@@ -359,6 +365,7 @@ export type ShowGroupByArgs<ExtArgs extends runtime.Types.Extensions.InternalArg
 
 export type ShowGroupByOutputType = {
   id: string
+  artShowNumber: string | null
   showName: string
   artistName: string
   email: string | null
@@ -423,6 +430,7 @@ export type ShowWhereInput = {
   OR?: Prisma.ShowWhereInput[]
   NOT?: Prisma.ShowWhereInput | Prisma.ShowWhereInput[]
   id?: Prisma.StringFilter<"Show"> | string
+  artShowNumber?: Prisma.StringNullableFilter<"Show"> | string | null
   showName?: Prisma.StringFilter<"Show"> | string
   artistName?: Prisma.StringFilter<"Show"> | string
   email?: Prisma.StringNullableFilter<"Show"> | string | null
@@ -466,6 +474,7 @@ export type ShowWhereInput = {
 
 export type ShowOrderByWithRelationInput = {
   id?: Prisma.SortOrder
+  artShowNumber?: Prisma.SortOrderInput | Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
   email?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -509,6 +518,7 @@ export type ShowOrderByWithRelationInput = {
 
 export type ShowWhereUniqueInput = Prisma.AtLeast<{
   id?: string
+  artShowNumber?: string
   AND?: Prisma.ShowWhereInput | Prisma.ShowWhereInput[]
   OR?: Prisma.ShowWhereInput[]
   NOT?: Prisma.ShowWhereInput | Prisma.ShowWhereInput[]
@@ -551,10 +561,11 @@ export type ShowWhereUniqueInput = Prisma.AtLeast<{
   status?: Prisma.EnumShowStatusFilter<"Show"> | $Enums.ShowStatus
   userId?: Prisma.StringNullableFilter<"Show"> | string | null
   createdAt?: Prisma.DateTimeFilter<"Show"> | Date | string
-}, "id">
+}, "id" | "artShowNumber">
 
 export type ShowOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
+  artShowNumber?: Prisma.SortOrderInput | Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
   email?: Prisma.SortOrderInput | Prisma.SortOrder
@@ -604,6 +615,7 @@ export type ShowScalarWhereWithAggregatesInput = {
   OR?: Prisma.ShowScalarWhereWithAggregatesInput[]
   NOT?: Prisma.ShowScalarWhereWithAggregatesInput | Prisma.ShowScalarWhereWithAggregatesInput[]
   id?: Prisma.StringWithAggregatesFilter<"Show"> | string
+  artShowNumber?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
   showName?: Prisma.StringWithAggregatesFilter<"Show"> | string
   artistName?: Prisma.StringWithAggregatesFilter<"Show"> | string
   email?: Prisma.StringNullableWithAggregatesFilter<"Show"> | string | null
@@ -647,6 +659,7 @@ export type ShowScalarWhereWithAggregatesInput = {
 
 export type ShowCreateInput = {
   id?: string
+  artShowNumber?: string | null
   showName: string
   artistName: string
   email?: string | null
@@ -690,6 +703,7 @@ export type ShowCreateInput = {
 
 export type ShowUncheckedCreateInput = {
   id?: string
+  artShowNumber?: string | null
   showName: string
   artistName: string
   email?: string | null
@@ -733,6 +747,7 @@ export type ShowUncheckedCreateInput = {
 
 export type ShowUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  artShowNumber?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
   email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -776,6 +791,7 @@ export type ShowUpdateInput = {
 
 export type ShowUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  artShowNumber?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
   email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -819,6 +835,7 @@ export type ShowUncheckedUpdateInput = {
 
 export type ShowCreateManyInput = {
   id?: string
+  artShowNumber?: string | null
   showName: string
   artistName: string
   email?: string | null
@@ -862,6 +879,7 @@ export type ShowCreateManyInput = {
 
 export type ShowUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  artShowNumber?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
   email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -905,6 +923,7 @@ export type ShowUpdateManyMutationInput = {
 
 export type ShowUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
+  artShowNumber?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   showName?: Prisma.StringFieldUpdateOperationsInput | string
   artistName?: Prisma.StringFieldUpdateOperationsInput | string
   email?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
@@ -948,6 +967,7 @@ export type ShowUncheckedUpdateManyInput = {
 
 export type ShowCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  artShowNumber?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
   email?: Prisma.SortOrder
@@ -991,6 +1011,7 @@ export type ShowCountOrderByAggregateInput = {
 
 export type ShowMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  artShowNumber?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
   email?: Prisma.SortOrder
@@ -1034,6 +1055,7 @@ export type ShowMaxOrderByAggregateInput = {
 
 export type ShowMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
+  artShowNumber?: Prisma.SortOrder
   showName?: Prisma.SortOrder
   artistName?: Prisma.SortOrder
   email?: Prisma.SortOrder
@@ -1087,6 +1109,7 @@ export type EnumShowStatusFieldUpdateOperationsInput = {
 
 export type ShowSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  artShowNumber?: boolean
   showName?: boolean
   artistName?: boolean
   email?: boolean
@@ -1130,6 +1153,7 @@ export type ShowSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
 
 export type ShowSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  artShowNumber?: boolean
   showName?: boolean
   artistName?: boolean
   email?: boolean
@@ -1173,6 +1197,7 @@ export type ShowSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensio
 
 export type ShowSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
+  artShowNumber?: boolean
   showName?: boolean
   artistName?: boolean
   email?: boolean
@@ -1216,6 +1241,7 @@ export type ShowSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensio
 
 export type ShowSelectScalar = {
   id?: boolean
+  artShowNumber?: boolean
   showName?: boolean
   artistName?: boolean
   email?: boolean
@@ -1257,13 +1283,14 @@ export type ShowSelectScalar = {
   createdAt?: boolean
 }
 
-export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "showName" | "artistName" | "email" | "county" | "state" | "town" | "showAddress" | "mainMedium" | "startDate" | "endDate" | "showHours" | "description" | "website" | "instagram" | "facebook" | "tiktok" | "xTwitter" | "onlineStore" | "videoLink" | "galleryStudioLink" | "contactEmail" | "mailingListLink" | "photoUrl" | "photoUrl2" | "photoUrl3" | "photoUrl4" | "photoUrl5" | "artistPhotoUrl" | "bio" | "classes" | "services" | "commissions" | "upcomingShows" | "plan" | "upgradePackage" | "paymentStatus" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
+export type ShowOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "artShowNumber" | "showName" | "artistName" | "email" | "county" | "state" | "town" | "showAddress" | "mainMedium" | "startDate" | "endDate" | "showHours" | "description" | "website" | "instagram" | "facebook" | "tiktok" | "xTwitter" | "onlineStore" | "videoLink" | "galleryStudioLink" | "contactEmail" | "mailingListLink" | "photoUrl" | "photoUrl2" | "photoUrl3" | "photoUrl4" | "photoUrl5" | "artistPhotoUrl" | "bio" | "classes" | "services" | "commissions" | "upcomingShows" | "plan" | "upgradePackage" | "paymentStatus" | "status" | "userId" | "createdAt", ExtArgs["result"]["show"]>
 
 export type $ShowPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Show"
   objects: {}
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
+    artShowNumber: string | null
     showName: string
     artistName: string
     email: string | null
@@ -1727,6 +1754,7 @@ export interface Prisma__ShowClient<T, Null = never, ExtArgs extends runtime.Typ
  */
 export interface ShowFieldRefs {
   readonly id: Prisma.FieldRef<"Show", 'String'>
+  readonly artShowNumber: Prisma.FieldRef<"Show", 'String'>
   readonly showName: Prisma.FieldRef<"Show", 'String'>
   readonly artistName: Prisma.FieldRef<"Show", 'String'>
   readonly email: Prisma.FieldRef<"Show", 'String'>

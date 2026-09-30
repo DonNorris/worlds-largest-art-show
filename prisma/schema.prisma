@@ -37,6 +37,7 @@ model User {
 
 model Show {
   id          String     @id @default(cuid())
+  artShowNumber String? @unique
   showName    String
   artistName  String
   email       String?
