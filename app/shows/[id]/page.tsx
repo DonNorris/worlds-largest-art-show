@@ -264,7 +264,22 @@ export default async function ShowPage({
                 marginBottom: 20,
               }}
             >
-              <div>
+              
+              <div
+  style={{
+    marginBottom: 12,
+    padding: "10px 14px",
+    background: "#fff3b0",
+    borderRadius: 8,
+    fontSize: 18,
+  }}
+>
+  <strong>Art Show Number:</strong> {show.id}
+  <div style={{ fontSize: 14, marginTop: 4 }}>
+    Save this number. You will need it with your email address to edit your Art Show.
+  </div>
+</div>
+<div>
                 <strong>Artist:</strong> {show.artistName}
               </div>
 
