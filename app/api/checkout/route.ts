@@ -39,8 +39,8 @@ export async function POST(request: Request) {
           quantity: 1,
         },
       ],
-     success_url: "http://localhost:3000/submit?payment=success&session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "http://localhost:3000/submit?payment=cancelled",
+     success_url: "https://www.worldslargestartshow.com/submit?payment=success&session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "https://www.worldslargestartshow.com/submit?payment=cancelled",
     });
 
     return NextResponse.json({ url: session.url });
